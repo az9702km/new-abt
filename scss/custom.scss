@@ -1,0 +1,103 @@
+
+@import "functions";
+
+$accent:        #c6ebbe;
+$secondary-new: #dddce0;
+$main-blue:     #eff4f9;
+$primary:       #473198;
+$success:       #179980;
+$info:          #22A3E6;
+$warning:       #e6b40b;
+$danger:        #ff5964;
+
+$dark-100:      #12101A;
+$dark-200:      #58565C;
+$dark-300:      #88868F;
+$light-300:     #B9B6C2;
+$light-200:     #DEDCE5;
+$light-100:     #F1F0F5;
+
+$cta-colors: (
+  "accent" : $accent,
+  "secondary-new" : $secondary-new,
+  "main-blue" : $main-blue
+);
+
+$custom-grays: (
+  "dark-100" : $dark-100,
+  "dark-200" : $dark-200,
+  "dark-300" : $dark-300,
+  "light-300" : $light-300,
+  "light-200" : $light-200,
+  "light-100" : $light-100
+);
+
+$box-shadow-30: 0 0 30px rgba($dark-100, .05);
+
+$btn-border-width: 2px;
+$btn-font-family:  'Montserrat', sans-serif;
+$btn-font-weight: 500;
+
+
+$form-check-input-border: 1px solid $light-300;
+
+$font-family-sans-serif:   'Open Sans',  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$headings-font-family: 'Montserrat', sans-serif;
+$headings-font-weight: 700;
+
+
+$dropdown-border-radius:            0;
+$dropdown-border-width:             0;
+$dropdown-box-shadow:               $box-shadow-30;
+
+$input-group-addon-bg:  white;
+
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+
+$theme-colors: map-merge($theme-colors, $cta-colors);
+$grays: map-merge($grays, $custom-grays);
+
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+
+
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
