@@ -1,0 +1,66 @@
+// scss-docs-start caret-mixins
+@mixin caret-down-dropdown {
+  content: "\f282";
+}
+
+@mixin caret-up-dropdown {
+  content: "\f286";
+  // transform: rotate(90deg);
+}
+
+@mixin caret-end-dropdown {
+  content: "\f285";
+}
+
+@mixin caret-start-dropdown {
+  content: "\f284";
+}
+
+@mixin caret-dropdown($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline-block;
+      font-family: bootstrap-icons !important;
+      font-size: .625em;
+      font-weight: 600;
+      line-height: 1;
+      font-style: normal;
+      margin-left: $caret-spacing;
+      vertical-align: baseline;
+      transform: scale(1.3);
+      content: "";
+      @if $direction == down {
+        @include caret-down-dropdown();
+      } @else if $direction == up {
+        @include caret-up-dropdown();
+      } @else if $direction == end {
+        @include caret-end-dropdown();
+      }
+    }
+
+    @if $direction == start {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        font-family: bootstrap-icons !important;
+        font-size: .625em;
+        font-weight: 600;
+        line-height: 1;
+        font-style: normal;
+        margin-right: $caret-spacing;
+        vertical-align: baseline;
+        content: "";
+        transform: scale(1.3);
+        @include caret-start-dropdown();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}
+// scss-docs-end caret-mixins

@@ -15,7 +15,9 @@
     padding-left: $breadcrumb-item-padding-x;
 
     &::before {
-      float: left; // Suppress inline spacings and underlining of the separator
+      font-size: .5em;
+      display: inline-block;
+      vertical-align: middle;
       padding-right: $breadcrumb-item-padding-x;
       color: $breadcrumb-divider-color;
       content: var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider)) #{"/* rtl:"} var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider-flipped)) #{"*/"};
