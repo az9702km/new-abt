@@ -848,3 +848,30 @@ body{
   border-bottom-width: 2px;
   border-color: transparent transparent $dark-100;
 }
+
+.nav-dark{
+  .nav-link{
+    color: white;
+  }
+}
+
+.footer-dark{
+  color: white;
+}
+
+.footer-dark{
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-content{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
