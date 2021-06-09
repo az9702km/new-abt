@@ -111,13 +111,15 @@ body{
   &__body{
     display: flex;
     flex-direction: column;
-    
+    align-self: stretch;    
     height: 100%;
   }
 
   &__img{
-    width: auto;
+    width: 6rem;
     height: 6rem;
+    flex-shrink: 0;
+    object-fit: contain;
     margin-bottom: 1.5rem;
   }
 
@@ -128,7 +130,32 @@ body{
   }
 }
 
+.tg-subs-block{
+  padding: 2rem 0;
+}
 
+.tg-subs-block--dark{
+  color: white;
+}
+
+.edu-inst__body{
+  .spc-list{
+    margin: 1rem -2rem 0;
+    border-top: 1px solid $light-100;
+
+    .list-group-item{
+      padding: .75rem 2rem;
+      border-color: $light-100;
+    }
+
+    .list-group-item:last-child{
+      padding-bottom: 0;
+      margin-bottom: -1rem;
+    }
+
+
+  }
+}
 
 .edu-inst.edu-inst--hrz{
   flex-direction: row;
@@ -138,6 +165,7 @@ body{
     height: auto;
     width: 6rem;
     margin-right: 1.5rem;
+    // object-fit: cover;
   }
 
 }
@@ -875,3 +903,5 @@ body{
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
+
+@import "custom/index";

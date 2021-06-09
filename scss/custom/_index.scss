@@ -1,0 +1,48 @@
+.hero{
+  padding-top: 6.75rem;
+  padding-bottom: 7rem;
+  background-image: url('../images/background/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  &__title{
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+  &__subheader{
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+.hero.hero--dark{
+  color: white;
+}
+
+.features{
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+}
+
+.main-univers, .main-news,.main-subjects{
+  margin-bottom: 4rem;
+}
+
+.section-title{
+  margin-bottom: 2rem;
+  text-align: center;
+  h4{
+    margin-bottom: 1rem;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.tg-subsc{
+  background-image: url(../images/background/tg-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
