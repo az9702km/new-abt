@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/ui-elements.css">
-    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
@@ -14,7 +14,109 @@
   </head>
   <body>
     <header class="bg-white">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="mobile-nav mobile-nav--light">
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Brand name</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="mm-body">
+              <!-- <div class="mm-body__user-block user-media">
+                <img src="images/portrets/ava-1-1.jpg" alt="user" class="user-media__img me-3">
+                <div class="user-media__info">
+                  <h5 class="mb-0">Azamat Sharipov</h5>
+                  <p class="text-muted mb-0">@username</p>
+                </div>
+              </div> -->
+              <nav class="mm-body__links">
+                <ul class="mb-links list-unstyled">
+                  <li class="mb-links__item">
+                    <a class="mb-link active" aria-current="page" href="#">Asosiy</a>
+                  </li>
+                  <li class="mb-links__item clps-down">
+                    <a class="mb-link" data-bs-toggle="collapse" href="#mb-collapse" role="button" aria-expanded="false" aria-controls="mb-collapse">
+                      Oliygohlar
+                    </a>
+                    <div class="collapse" id="mb-collapse">
+                      <ul class="mb-links list-unstyled">
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Asosiy</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-maxsus</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-ta’lim</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Test</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Yangiliklar</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-maxsus</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-ta’lim</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Test</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Yangiliklar</a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <h3 class="mobile-nav-brand mb-0"><a class="link-dark" href="index.html">Navbar</a></h3>
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileNavSearch" role="button" aria-controls="mobileNavSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-top offcanvas-search" tabindex="-1" id="mobileNavSearch" aria-labelledby="mobileNavSearchLabel">
+          <div class="offcanvas-header">
+            <h5 id="mobileNavSearchLabel">Qidiruv</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex form-control border icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+            <ul class="list-unstyled history-list">
+              <li class="history-list__item">
+                Diniy oliygohlar
+              </li>
+              <li class="history-list__item">
+                O'rta ta'lim
+              </li>
+              <li class="history-list__item">
+                Xususiy oliygohlar
+              </li>
+              <li class="history-list__item">
+                Qabul 2021
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex">
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,10 +151,6 @@
                 <a class="nav-link" href="#">Yangiliklar</a>
               </li>
             </ul>
-            <form class="d-flex form-control icon-input flex-fill">
-              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
-              <i class="bi bi-search"></i>
-            </form>
           </div>
         </div>
       </nav>
@@ -63,11 +161,11 @@
       <section class="hero hero--dark">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-10">
+            <div class="col-lg-10">
               <h3 class="hero__title">Brand name</h3>
               <p class="hero__subheader">O’zbekistondagi tashkilotlari va ta’lim to’g’risidagi so’ggi yangiliklar</p>
               <div class="input-group hero-search mb-3">
-                <button class="btn btn-sm px-4 btn-secondary-new dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">O’quv markazlari</button>
+                <button class="btn btn-sm px-4 btn-secondary-new dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="d-none d-md-inline">O’quv markazlari</span><i class="bi bi-list d-md-none"></i> </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -120,13 +218,13 @@
       <section class="main-univers">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 mx-auto section-title">
+            <div class="col-lg-4 mx-auto section-title">
               <h4>Ta’lim muassasalsri</h4>
               <p>Davlat va nodavlat ta’lim muassasalari, o’quv markazlari haqida batafsil ma’lumotlar</p>
             </div>
           </div>
           <div class="row mb-4">
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="edu-inst bg-white main-shadow">
                 <img src="images/universities/tuit_logo.png" class="edu-inst__img" alt="tuit">
                 <div class="edu-inst__body">
@@ -140,7 +238,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="edu-inst bg-white main-shadow">
                 <img src="images/universities/TSUL.png" class="edu-inst__img" alt="yuridik">
                 <div class="edu-inst__body">
@@ -154,7 +252,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="edu-inst bg-white main-shadow">
                 <img src="images/universities/pedagok.jpg" class="edu-inst__img" alt="pedagogik institut">
                 <div class="edu-inst__body">
@@ -182,12 +280,12 @@
             <div class="col-md-12">
               <div class="news-section main-card">
                 <div class="row">
-                  <div class="col-md-4 mx-auto section-title">
+                  <div class="col-lg-4 mx-auto section-title">
                     <h4>Yangiliklar</h4>
                     <p>Davlat va nodavlat ta’lim muassasalari, o’quv markazlari haqida so'nggi yangiliklar</p>
                   </div>
                 </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
                   <div class="col news-card">
                     <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
                     <div class="news-card__body">
@@ -254,13 +352,13 @@
       <section class="main-univers">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 mx-auto section-title">
+            <div class="col-lg-4 mx-auto section-title">
               <h4>Ta’lim muassasalsri</h4>
               <p>Davlat va nodavlat ta’lim muassasalari, o’quv markazlari haqida batafsil ma’lumotlar</p>
             </div>
           </div>
           <div class="row mb-4">
-            <div class="col-md-4">              
+            <div class="col-lg-4">              
               <div class="edu-inst bg-white main-shadow">
                 <img src="images/lcs/lets-animate.jpg" class="edu-inst__img" alt="lets-animate">
                 <div class="edu-inst__body">
@@ -280,7 +378,7 @@
                 </div>                
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="edu-inst bg-white main-shadow">
                 <img src="images/lcs/cambridge.jpg" class="edu-inst__img" alt="cambridge">
                 <div class="edu-inst__body">
@@ -300,7 +398,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="edu-inst bg-white main-shadow">
                 <img src="images/lcs/sensus.png" class="edu-inst__img" alt="sensus">
                 <div class="edu-inst__body">
@@ -329,75 +427,68 @@
         </div>
       </section>
       <section class="main-subjects main-card">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 mx-auto section-title">
-              <h4>Mavzuli testlar</h4>
-              <p>Fanlar bo’yicha mavzulashtirilgan test sinovlari</p>
+        <div class="row">
+          <div class="col-lg-4 mx-auto section-title">
+            <h4>Mavzuli testlar</h4>
+            <p>Fanlar bo’yicha mavzulashtirilgan test sinovlari</p>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-lg-5">
+            <div class="card text-white border-0 rounded-0">
+              <img src="images/background/subjects/maths.png" class="card-img subj-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <div class="d-flex flex-column p-3 first-s-card h-100">
+                  <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Matematika</a></h5>
+                  <p class="card-text">15 ga yaqin mavzular bo’yicha teslar</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row mb-4">
-            <div class="col-md-5">
-              <div class="card bg-dark text-white border-0 rounded-0">
-                <img src="images/background/subjects/maths.png" class="card-img rounded-0" alt="...">
-                <div class="card-img-overlay">
-                  <div class="d-flex flex-column p-3 w-50 h-100">
-                    <h5 class="card-title mt-auto">Matematika</h5>
-                    <p class="card-text">15 ga yaqin mavzular bo’yicha teslar</p>
-                    <p class="card-text mb-auto"><a href="#!" class="btn btn-primary btn-sm">Boshlash</a></p>
-                  </div>
+          <div class="col-lg-4 subjects mt-3 mt-lg-0">
+            <div class="card subject-card">
+              <img src="images/background/subjects/history.png" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <div class="d-flex flex-column p-2 h-100">
+                  <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Tarix</a></h5>
+                  <p class="card-text">16ga yaqin mavzulashtirilgan testlar</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 d-flex flex-column">
-              <div class="card bg-dark text-white border-0 rounded-0 mb-auto">
-                <img src="images/background/subjects/history.png" class="card-img rounded-0" alt="...">
-                <div class="card-img-overlay">
-                  <div class="d-flex flex-column p-2 h-100">
-                    <h5 class="card-title mt-auto">Tarix</h5>
-                    <p class="card-text">16ga yaqin mavzulashtirilgan testlar</p>
-                    <p class="card-text mb-auto"><a href="#!" class="btn btn-primary btn-sm">Boshlash</a></p>
-                  </div>
+            <div class="card subject-card">
+              <img src="images/background/subjects/biology.png" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <div class="d-flex flex-column p-2 h-100">
+                  <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Biologiya</a></h5>
+                  <p class="card-text">16ga yaqin mavzulashtirilgan testlar</p>
                 </div>
               </div>
-              <div class="card bg-dark text-white border-0 rounded-0">
-                <img src="images/background/subjects/biology.png" class="card-img rounded-0" alt="...">
-                <div class="card-img-overlay">
-                  <div class="d-flex flex-column p-2 h-100">
-                    <h5 class="card-title mt-auto">Biologiya</h5>
-                    <p class="card-text">16ga yaqin mavzulashtirilgan testlar</p>
-                    <p class="card-text mb-auto"><a href="#!" class="btn btn-primary btn-sm">Boshlash</a></p>
-                  </div>
-                </div>
-              </div>              
-            </div>
-            <div class="col-md-3 d-flex flex-column">
-              <div class="card bg-dark text-white border-0 rounded-0 mb-auto">
-                <img src="images/background/subjects/chemistry.png" class="card-img rounded-0" alt="...">
-                <div class="card-img-overlay">
-                  <div class="d-flex flex-column p-2 h-100">
-                    <h5 class="card-title mt-auto">Kimyo</h5>
-                    <p class="card-text">16ga yaqin testlar</p>
-                    <p class="card-text mb-auto"><a href="#!" class="btn btn-primary btn-sm">Boshlash</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="card bg-dark text-white border-0 rounded-0">
-                <img src="images/background/subjects/geography.png" class="card-img rounded-0" alt="...">
-                <div class="card-img-overlay">
-                  <div class="d-flex flex-column p-2 h-100">
-                    <h5 class="card-title mt-auto">Geografiya</h5>
-                    <p class="card-text">16ga yaqin testlar</p>
-                    <p class="card-text mb-auto"><a href="#!" class="btn btn-primary btn-sm">Boshlash</a></p>
-                  </div>
-                </div>
-              </div>              
-            </div>
+            </div>              
           </div>
-          <div class="row">
-            <div class="col-md-4 mx-auto text-center">
-              <a href="#!" class="btn btn-primary">Barchasini ko’rish</a>
+          <div class="col-lg-3 subjects mt-3 mt-lg-0">
+            <div class="card subject-card">
+              <img src="images/background/subjects/chemistry.png" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <div class="d-flex flex-column p-2 h-100">
+                  <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Kimyo</a></h5>
+                  <p class="card-text">16ga yaqin testlar</p>
+                </div>
+              </div>
             </div>
+            <div class="card bg-dark subject-card">
+              <img src="images/background/subjects/geography.png" class="card-img rounded-0" alt="...">
+              <div class="card-img-overlay">
+                <div class="d-flex flex-column p-2 h-100">
+                  <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Geografiya</a></h5>
+                  <p class="card-text">16ga yaqin testlar</p>
+                </div>
+              </div>
+            </div>              
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mx-auto text-center">
+            <a href="#!" class="btn btn-primary">Barchasini ko’rish</a>
           </div>
         </div>
       </section>
@@ -405,7 +496,7 @@
         <div class="container">
           <div class="tg-subs-block tg-subs-block--dark">
             <div class="row justify-content-around">
-              <div class="col-md-5">
+              <div class="col-md-7 col-lg-5">
                 <h4 class="mb-3">Bizning telegram kanalimizga obuna bo’ling</h4>
                 <a href="#!" class="btn btn-primary">Obuna bo’lish</a>
               </div>
