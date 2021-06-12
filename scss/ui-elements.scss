@@ -1251,6 +1251,12 @@ body{
   }
 }
 
+.pop-news{
+  position: sticky;
+  top: 3.5rem;
+}
+
 @import "custom/index";
 @import "custom/univer-single";
 @import "custom/news";
+@import "custom/article";

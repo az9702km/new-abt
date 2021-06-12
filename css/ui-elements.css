@@ -1199,6 +1199,11 @@ body {
   padding-bottom: .5rem;
 }
 
+.pop-news {
+  position: sticky;
+  top: 3.5rem;
+}
+
 .hero {
   padding-top: 6.75rem;
   padding-bottom: 7rem;
@@ -1282,5 +1287,9 @@ body {
 }
 
 .main-news .news-section {
+  margin-top: 2rem;
+}
+
+.comment-section, .article-main {
   margin-top: 2rem;
 }

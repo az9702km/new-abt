@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <title>Article</title>
+  </head>
+  <body>
+    <header class="bg-white pt-5 pt-md-0">
+      <nav class="mobile-nav mobile-nav--light position-fixed fixed-top">
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Brand name</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="mm-body">
+              <nav class="mm-body__links">
+                <ul class="mb-links list-unstyled">
+                  <li class="mb-links__item">
+                    <a class="mb-link active" aria-current="page" href="#">Asosiy</a>
+                  </li>
+                  <li class="mb-links__item clps-down">
+                    <a class="mb-link" data-bs-toggle="collapse" href="#mb-collapse" role="button" aria-expanded="false" aria-controls="mb-collapse">
+                      Oliygohlar
+                    </a>
+                    <div class="collapse" id="mb-collapse">
+                      <ul class="mb-links list-unstyled">
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Asosiy</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-maxsus</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-ta’lim</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Test</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Yangiliklar</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-maxsus</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-ta’lim</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Test</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Yangiliklar</a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <h3 class="mobile-nav-brand mb-0"><a class="link-dark" href="index.html">Navbar</a></h3>
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileNavSearch" role="button" aria-controls="mobileNavSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-top offcanvas-search" tabindex="-1" id="mobileNavSearch" aria-labelledby="mobileNavSearchLabel">
+          <div class="offcanvas-header">
+            <h5 id="mobileNavSearchLabel">Qidiruv</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex form-control border icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+            <ul class="list-unstyled history-list">
+              <li class="history-list__item">
+                Diniy oliygohlar
+              </li>
+              <li class="history-list__item">
+                O'rta ta'lim
+              </li>
+              <li class="history-list__item">
+                Xususiy oliygohlar
+              </li>
+              <li class="history-list__item">
+                Qabul 2021
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Asosiy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oliygohlar
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+            <form class="d-flex form-control icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+          </div>
+        </div>
+      </nav>    
+      <nav aria-label="breadcrumb">
+        <div class="container py-3">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a class="text-dark text-decoration-none" href="#">Bosh sahifa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Oliygohlar</li>
+          </ol>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="article-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="article main-card">
+                <article>
+                  <hgroup>
+                    <div class="article-subheader mb-3">Oliy Ta’lim Muassasasi</div>
+                    <h1 class="display-6">Acting FCC Chair: The 'Homework Gap' Is an 'Especially Cruel' Reality During the Pandemic</h1>
+                  </hgroup>
+                  <div class="article-info">
+                    <div class="article-author">
+                      <img src="images/portrets/ava-1.jpg" alt="avatar" class="article-author__photo ava me-3">
+                      Muallif <a href="#!" class="text-dark mx-1">Azamat Sharipov</a> - <time class="mx-1"> Mart 21, 2021 </time>
+                    </div>
+                    <div class="article-actions">
+                      <ul class="nav align-items-center">
+                        <li class="nav-item me-3">
+                          <i class="bi bi-eye"></i> 232
+                        </li>
+                        <li class="nav-item me-3">
+                          <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                          <label class="toggle-icon toggle-icon--check" for="btn-check-outlined"><i class="bi bi-bookmark"></i></label>
+                        </li>
+                        <li class="nav-item">
+                          <div class="dropend">
+                            <label type="button" class="toggle-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-share"></i>
+                            </label>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-link me-2"></i> Copy</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-facebook me-2"></i> Facebook</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-telegram me-2"></i> Telegram</a></li>
+                              <li><a class="dropdown-item" href="#"><i class="bi bi-instagram me-2"></i> Instagram</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <figure class="figure" >
+                    <div class="ratio ratio-16x9 mb-4">
+                      <img src="images/post/post-lg-1.jpg" class="figure-img img-fluid" alt="post-image" draggable="true">
+                    </div>
+                    <figcaption class="figure-caption mb-2">Image title Eight graders walk the halls on the first day back to school in Guntown, Miss., on Aug. 6, 2020. Teachers in several states told Education Week that since the beginning of the school year, enforcing precautions such as social distancing to slow the spread of the coronavirus has been nearly impossible.</figcaption>
+                    <figcaption class="blockquote-footer mt-2">
+                      Author - Adam Robison <cite title="Source Title">/The Northeast Mississippi Daily Journal via AP</cite>
+                    </figcaption>
+                  </figure>
+                  <p class="lead">
+                    <b>
+                      Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu
+                    </b>
+                  </p>
+                  <h5>Subheader 1</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget
+                  </p>
+                  <h5>Subheader 2</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget
+                  </p>
+                  <figure class="blq-figure">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.3333 30V16.6667H15.2L18.5333 10H8.96667L5 17.9333V30H18.3333ZM15 26.6667H8.33333V18.7333L11.0333 13.3333H13.1333L9.8 20H15V26.6667ZM35 30V16.6667H31.8667L35.2 10H25.6333L21.6667 17.9333V30H35ZM31.6667 26.6667H25V18.7333L27.7 13.3333H29.8L26.4667 20H31.6667V26.6667Z" fill="#12101A"/>
+                    </svg>
+                    <blockquote class="blockquote mt-3">
+                      <p class="h5">
+                        If it’s systemic, that no one’s wearing their mask, or hardly anyone is wearing their mask, and there’s basically no other measures in place to stop spread, then it’s going to be a huge problem.
+                      </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mt-3">
+                      Justin Lessler, associate professor of epidemiology at <cite title="Source Title">Johns Hopkins University’s Bloomberg School of Public Health</cite>
+                    </figcaption>
+                  </figure>
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                  </div>
+                  <h5>Subheader 1</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies
+                  </p>
+                  <ol>
+                    <li>
+                      Justin Lessler, associate professor of epidemiology at Johns Hopkins University’s Bloomberg School of Public Health
+                    </li>
+                    <li>
+                      Justin Lessler, associate professor of epidemiology at Johns Hopkins University’s Bloomberg School of Public Health
+                    </li>
+                  </ol>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies
+                  </p>
+                  <ul>
+                    <li>
+                      Justin Lessler, associate professor of epidemiology at Johns Hopkins University’s Bloomberg School of Public Health
+                    </li>
+                    <li>
+                      Justin Lessler, associate professor of epidemiology at Johns Hopkins University’s Bloomberg School of Public Health
+                    </li>
+                  </ul>
+                </article>
+                <div class="d-flex align-items-center py-4 border-top">
+                  Related tags:
+                  <div class="d-flex ms-3 align-items-center">
+                    <a href="#!" class="px-0 tag me-4">xarbiy otm</a>
+                    <a href="#!" class="px-0 tag me-4">diniy otm</a>
+                    <a href="#!" class="px-0 tag">texnikum</a>
+                  </div>
+                </div>
+              </div>  
+              <section class="comment-section main-card">
+                <h4>Izoh qoldiring</h4>
+                <div class="comment-block mb-4 pb-2">
+                  <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                  <form class="flex-fill">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <label for="comment" class="form-label">Izoh matni</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                      </div>
+                      <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Izoh qoldirish</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <hr>
+                <div class="full-comments-section">
+                  <b>Barcha izohlar (32)</b>
+                  <article class="comment-block border-top-0">
+                    <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                    <div class="comment-body">
+                      <div class="comment-author mb-2">
+                        <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                      </div>
+                      <p class="comment-text mb-3">
+                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                      </p>
+                      <div class="comment-actions pb-3">
+                        <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer" role="button" aria-expanded="false" aria-controls="comment-answer">
+                          <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                        </a>
+                        <form oninput="x.value=like.checked ? parseInt(x.value)+1 : parseInt(x.value)-1">
+                          <input type="checkbox" class="btn-check" id="like" autocomplete="off">
+                          <label class="toggle-icon toggle-icon--check" for="like"><i class="bi bi-heart"></i></label>
+                          <output name="x" for="like">25</output>
+                        </form>
+                      </div>
+                      <div class="collapse" id="comment-answer">
+                        <div class="comment-block mb-4 pb-2 align-items-center">
+                          <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                          <form class="flex-fill">
+                            <div class="d-flex">
+                              <div class="flex-fill me-2">
+                                <textarea class="form-control" id="comment" rows="1"></textarea>
+                              </div>
+                              <div class="d-grid">
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <article class="comment-block">
+                        <img src="images/portrets/ava-6.jpg" alt="ava" class="ava me-3">
+                        <div class="comment-body">
+                          <div class="comment-author mb-2">
+                            <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                          </div>
+                          <p class="comment-text">
+                            Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                          </p>
+                          <div class="comment-actions">
+                            <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer2" role="button" aria-expanded="false" aria-controls="comment-answer">
+                              <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                            </a>
+                            <form oninput="x2.value=like2.checked ? parseInt(x2.value)+1 : parseInt(x2.value)-1">
+                              <input type="checkbox" class="btn-check" id="like2" autocomplete="off">
+                              <label class="toggle-icon toggle-icon--check" for="like2"><i class="bi bi-heart"></i></label>
+                              <output name="x2" for="like2">25</output>
+                            </form>
+                          </div>
+                          <div class="collapse" id="comment-answer2">
+                            <div class="comment-block mb-4 pb-2 align-items-center">
+                              <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                              <form class="flex-fill">
+                                <div class="d-flex">
+                                  <div class="flex-fill me-2">
+                                    <textarea class="form-control" id="comment" rows="1"></textarea>
+                                  </div>
+                                  <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      <a class="toggle-icon text-secondary text-decoration-none text-start" data-bs-toggle="collapse" href="#full-answers" role="button" aria-expanded="false" aria-controls="full-answers">
+                        <i class="bi bi-chevron-down me-2"></i> Javoblarni ko’rish <span>18</span>ta
+                      </a>                
+                      <div class="collapse" id="full-answers">
+                        <article class="comment-block">
+                          <img src="images/portrets/ava-5.jpg" alt="ava" class="ava me-3">
+                          <div class="comment-body">
+                            <div class="comment-author mb-2">
+                              <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                            </div>
+                            <p class="comment-text">
+                              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                            </p>
+                            <div class="comment-actions">
+                              <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer21" role="button" aria-expanded="false" aria-controls="comment-answer21">
+                                <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                              </a>
+                              <form oninput="x21.value=like21.checked ? parseInt(x21.value)+1 : parseInt(x21.value)-1">
+                                <input type="checkbox" class="btn-check" id="like21" autocomplete="off">
+                                <label class="toggle-icon toggle-icon--check" for="like21"><i class="bi bi-heart"></i></label>
+                                <output name="x21" for="like21">25</output>
+                              </form>
+                            </div>
+                            <div class="collapse" id="comment-answer21">
+                              <div class="comment-block mb-4 pb-2 align-items-center">
+                                <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                                <form class="flex-fill">
+                                  <div class="d-flex">
+                                    <div class="flex-fill me-2">
+                                      <textarea class="form-control" id="comment" rows="1"></textarea>
+                                    </div>
+                                    <div class="d-grid">
+                                      <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="comment-block">
+                          <img src="images/portrets/ava-4.jpg" alt="ava" class="ava me-3">
+                          <div class="comment-body">
+                            <div class="comment-author mb-2">
+                              <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                            </div>
+                            <p class="comment-text">
+                              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                            </p>
+                            <div class="comment-actions">
+                              <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer22" role="button" aria-expanded="false" aria-controls="comment-answer22">
+                                <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                              </a>
+                              <form oninput="x22.value=like22.checked ? parseInt(x22.value)+1 : parseInt(x22.value)-1">
+                                <input type="checkbox" class="btn-check" id="like22" autocomplete="off">
+                                <label class="toggle-icon toggle-icon--check" for="like22"><i class="bi bi-heart"></i></label>
+                                <output name="x22" for="like22">25</output>
+                              </form>
+                            </div>
+                            <div class="collapse" id="comment-answer22">
+                              <div class="comment-block mb-4 pb-2 align-items-center">
+                                <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                                <form class="flex-fill">
+                                  <div class="d-flex">
+                                    <div class="flex-fill me-2">
+                                      <textarea class="form-control" id="comment" rows="1"></textarea>
+                                    </div>
+                                    <div class="d-grid">
+                                      <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="comment-block">
+                    <img src="images/portrets/ava-1-1.jpg" alt="ava" class="ava me-3">
+                    <div class="comment-body">
+                      <div class="comment-author mb-2">
+                        <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                      </div>
+                      <p class="comment-text mb-3">
+                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                      </p>
+                      <div class="comment-actions pb-3">
+                        <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer3" role="button" aria-expanded="false" aria-controls="comment-answer">
+                          <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                        </a>
+                        <form oninput="x3.value=like3.checked ? parseInt(x3.value)+1 : parseInt(x3.value)-1">
+                          <input type="checkbox" class="btn-check" id="like3" autocomplete="off">
+                          <label class="toggle-icon toggle-icon--check" for="like3"><i class="bi bi-heart"></i></label>
+                          <output name="x3" for="like3">25</output>
+                        </form>
+                      </div>
+                      <div class="collapse" id="comment-answer3">
+                        <div class="comment-block mb-4 pb-2 align-items-center">
+                          <img src="images/portrets/ava-1-2.jpg" alt="ava" class="ava me-3">
+                          <form class="flex-fill">
+                            <div class="d-flex">
+                              <div class="flex-fill me-2">
+                                <textarea class="form-control" id="comment" rows="1"></textarea>
+                              </div>
+                              <div class="d-grid">
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <a class="toggle-icon text-secondary text-decoration-none text-center" data-bs-toggle="collapse" href="#full-comments" role="button" aria-expanded="false" aria-controls="full-comments">
+                    <i class="bi bi-chevron-down me-2"></i> Ko’proq javoblarni ko’rish
+                  </a>                
+                  <div class="collapse" id="full-comments">
+                    <article class="comment-block">
+                      <img src="images/portrets/ava-1-3.jpg" alt="ava" class="ava me-3">
+                      <div class="comment-body">
+                        <div class="comment-author mb-2">
+                          <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                        </div>
+                        <p class="comment-text">
+                          Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                        </p>
+                        <div class="comment-actions">
+                          <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer21" role="button" aria-expanded="false" aria-controls="comment-answer21">
+                            <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                          </a>
+                          <form oninput="x32.value=like32.checked ? parseInt(x32.value)+1 : parseInt(x32.value)-1">
+                            <input type="checkbox" class="btn-check" id="like32" autocomplete="off">
+                            <label class="toggle-icon toggle-icon--check" for="like32"><i class="bi bi-heart"></i></label>
+                            <output name="x32" for="like32">25</output>
+                          </form>
+                        </div>
+                        <div class="collapse" id="comment-answer21">
+                          <div class="comment-block mb-4 pb-2 align-items-center">
+                            <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                            <form class="flex-fill">
+                              <div class="d-flex">
+                                <div class="flex-fill me-2">
+                                  <textarea class="form-control" id="comment" rows="1"></textarea>
+                                </div>
+                                <div class="d-grid">
+                                  <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="comment-block">
+                      <img src="images/portrets/ava-1-4.jpg" alt="ava" class="ava me-3">
+                      <div class="comment-body">
+                        <div class="comment-author mb-2">
+                          <b>Bobir Toshmatov - </b><time>32 daqiqa oldin</time>
+                        </div>
+                        <p class="comment-text">
+                          Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. 
+                        </p>
+                        <div class="comment-actions">
+                          <a class="toggle-icon me-3" data-bs-toggle="collapse" href="#comment-answer22" role="button" aria-expanded="false" aria-controls="comment-answer22">
+                            <i class="bi bi-arrow-return-right me-2"></i> Javob berish
+                          </a>
+                          <form oninput="x31.value=like31.checked ? parseInt(x31.value)+1 : parseInt(x31.value)-1">
+                            <input type="checkbox" class="btn-check" id="like31" autocomplete="off">
+                            <label class="toggle-icon toggle-icon--check" for="like31"><i class="bi bi-heart"></i></label>
+                            <output name="x31" for="like31">25</output>
+                          </form>
+                        </div>
+                        <div class="collapse" id="comment-answer22">
+                          <div class="comment-block mb-4 pb-2 align-items-center">
+                            <img src="images/portrets/ava-2.jpg" alt="ava" class="ava me-3">
+                            <form class="flex-fill">
+                              <div class="d-flex">
+                                <div class="flex-fill me-2">
+                                  <textarea class="form-control" id="comment" rows="1"></textarea>
+                                </div>
+                                <div class="d-grid">
+                                  <button type="submit" class="btn btn-primary"><i class="bi bi-chat-left-dots-fill"></i></button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </section>                        
+            </div>
+            <aside class="col-md-4">
+              <div class="bg-white main-shadow pop-news">
+                <h4>Ommabop</h4>
+                <div class="pop-news__list">
+                  <div class="news-card news-card--pop d-flex flex-row mb-4">
+                    <div class="news-card__body">
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark" >
+                          Qabul–2021: Abituriyentlarni qanday yangiliklar kutyapti?
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled small">
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="news-card news-card--pop d-flex flex-row mb-4">
+                    <div class="news-card__body">
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark" >
+                          Talabalarga stipendiyalar tayinlash va to‘lash tartibi
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled small">
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="news-card news-card--pop d-flex flex-row mb-4">
+                    <div class="news-card__body">
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark" >
+                          IELTS va boshqa xalqaro imtihonlarda yuqori ball olganlarga xarajatlari...
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled small">
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="news-card news-card--pop d-flex flex-row">
+                    <div class="news-card__body">
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark" >
+                          Bu yil grantlar soni 25 foizga oshirilishi rejalashtirilmoqda
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled small">
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <a href="#!" class="mt-4 d-block">Barchasi</a>
+              </div>          
+            </aside>
+          </div>
+        </div>
+      </section>    
+    </main>
+
+    <footer class="bg-dark footer-dark mt-4">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+            <h4><a href="#!" class="link-light text-decoration-none">Brand name</a></h4>
+            <ul class="nav nav-dark justify-content-center justify-content-md-start">
+              <li class="nav-item">
+                <a class="nav-link ps-md-0" href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-3 mt-md-0">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          <p class="mb-0 text-light text-center text-md-start">Ⓒ Action Media Solution, 2021 </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#!" class="link-light text-decoration-none me-5">Privacy and Policy</a>
+            <div class="dropdown text-center">
+              <button class="btn btn-sm btn-link text-light dropdown-toggle text-decoration-none" type="button" id="lang" data-bs-toggle="dropdown" aria-expanded="false">
+                uz
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="lang">
+                <li><a class="dropdown-item" href="#">uz</a></li>
+                <li><a class="dropdown-item" href="#">ru</a></li>
+                <li><a class="dropdown-item" href="#">en</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
