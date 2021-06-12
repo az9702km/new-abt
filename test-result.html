@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <title>Article</title>
+  </head>
+  <body>
+    <main>
+      <section class="main-results">
+        <div class="container">
+          <h3>Test Natijalari <a href="#!" class="link-muted ms-4">Matematika</a></h3>
+          <h5 class="text-muted">Mavzu: <a href="#!" class="link-muted ms-4">Bo’linish belgilari</a></h5>
+          <p>23:12 - 21.05.2021</p>
+          <div class="row result-tablot">
+            <div class="col-md-3">
+              <div class="test-results bg-primary test-results--dark h-100 text-center">
+                <div class="test-results__item">
+                  <h6 class="tr-header">Umumiy ball</h6>
+                  <h1 class="display-4 tr-number">171.3</h1>
+                  <small class="tr-difference">O’rtacha ko’rsatkich <span class="text-warning">156.4</span> ball</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="test-results h-100 bg-white text-end">
+                <div class="test-results__item flex-fill">
+                  <h6 class="tr-header text-muted">To’g’ri javoblar</h6>
+                  <h1 class="tr-number">23ta</h1>
+                  <small class="tr-difference">O’rtacha ko’rsatkich 20ta</small>
+                </div>
+                <div class="divider-vr"></div>
+                <div class="test-results__item flex-fill">
+                  <h6 class="tr-header text-muted">Aniqlik</h6>
+                  <h1 class="tr-number">76%</h1>
+                  <small class="tr-difference">O’rtacha ko’rsatkich 70%</small>
+                </div>
+                <div class="divider-vr"></div>
+                <div class="test-results__item flex-fill">
+                  <h6 class="tr-header text-muted">Vaqt</h6>
+                  <h1 class="tr-number">125m 45s</h1>
+                  <small class="tr-difference">O’rtacha ko’rsatkich 156m 35sec</small>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center py-4">
+              <input type="radio" class="btn-check" name="like" id="like" autocomplete="off">
+              <label class="btn btn-light border me-3" for="like"><i class="bi bi-hand-thumbs-up"></i></label>
+
+              <input type="radio" class="btn-check" name="like" id="dislike" autocomplete="off">
+              <label class="btn btn-light border me-3" for="dislike"><i class="bi bi-hand-thumbs-down"></i></label>
+
+              <a href="#!" class="btn btn-light border me-3"><i class="bi bi-box-arrow-up-right"></i></a>
+
+              <input type="checkbox" class="btn-check" name="book" id="book" autocomplete="off">
+              <label class="btn btn-light border me-3" for="book"><i class="bi bi-bookmark"></i></label>
+
+              <a href="#!" class="btn btn-light border">Qayta o’tish</a>
+
+
+              
+            </div>
+          </div>          
+        </div>
+      </section>
+      <section class="result-graph">
+        <div class="container">
+          <div class="overall-results main-card">
+            <div class="d-flex justify-content-between align-items-lg-center mb-4">
+              <h4>Umumiy natijalar</h4>
+              <p class="mb-0"><b>21.03.2020</b> dan boshlab</p>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-md-8">
+                <div class="ratio ratio-16x9">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="dropdown text-center mb-4">
+                  <button class="btn btn-link dropdown-toggle text-decoration-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Javoblar
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Javoblar</a></li>
+                    <li><a class="dropdown-item" href="#">Fanlar</a></li>
+                    <li><a class="dropdown-item" href="#">Mavzular</a></li>
+                  </ul>
+                </div>
+                <div class="ratio ratio-16x9">
+                  <canvas id="myChart-dnt"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="wrong-answrs">
+        <div class="container">
+          <div class="main-card">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="quiz">
+                  <h4 class="quiz-header">
+                    Subject name
+                  </h4>
+                  <ol class="quiz-list">
+                    <li class="quiz-list__item quiz-single">
+                      <p>Qaysi o‘simliklarning bargi va poyasi yo‘q, lekin guli eng yirik gul hisoblanadi?</p>
+                      <form class="quiz-single__form answers-form">
+                        <div class="answers-item answers-item--wrong">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            raffleziya Arnoldi
+                          </p>
+                        </div>
+                        <div class="answers-item">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            sekvoyyadendron
+                          </p>
+                        </div>
+                        <div class="answers-item">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            talipot palmasi
+                          </p>
+                        </div>
+                        <div class="answers-item answers-item--right">
+                          <i class="bi bi-check-lg me-3"></i>
+                          <p class="mb-0">
+                            volfiya
+                          </p>
+                          <button class="btn btn-sm btn-light border" type="button" data-bs-toggle="collapse" data-bs-target="#why" aria-expanded="false" aria-controls="why">
+                            <i class="bi bi-lightbulb me-2"></i>Nega?
+                          </button>                 
+                        </div>
+                        <div class="collapse" id="why">
+                          <div class="right-answer-info btn-main-blue">
+                            <i class="bi bi-lightbulb me-3 text-primary"></i>
+                            <p>
+                              <b>Вольфия бескорневая</b> — крохотное растение, представляющее собой плавающие на поверхности воды зелёные эллиптические пластинки размером около 1 миллиметра. Эти шарики свободно плавают на поверхности воды, потребляя растворенные в ней питательные вещества.
+                            </p>
+                          </div>
+                        </div>
+                      </form>                
+                    </li>
+                    <li class="quiz-list__item quiz-single">
+                      <p>Qaysi o‘simliklarning bargi va poyasi yo‘q, lekin guli eng yirik gul hisoblanadi?</p>
+                      <form class="quiz-single__form answers-form">
+                        <div class="answers-item answers-item--wrong">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            raffleziya Arnoldi
+                          </p>
+                        </div>
+                        <div class="answers-item">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            sekvoyyadendron
+                          </p>
+                        </div>
+                        <div class="answers-item">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            talipot palmasi
+                          </p>
+                        </div>
+                        <div class="answers-item answers-item--right">
+                          <i class="bi bi-check-lg me-3"></i>
+                          <p class="mb-0">
+                            volfiya
+                          </p>
+                          <button class="btn btn-sm btn-light border" type="button" data-bs-toggle="collapse" data-bs-target="#why2" aria-expanded="false" aria-controls="why2">
+                            <i class="bi bi-lightbulb me-2"></i>Nega?
+                          </button>                
+                        </div>
+                        <div class="collapse" id="why2">
+                          <div class="right-answer-info btn-main-blue">
+                            <i class="bi bi-lightbulb me-3 text-primary"></i>
+                            <p>
+                              <b>Вольфия бескорневая</b> — крохотное растение, представляющее собой плавающие на поверхности воды зелёные эллиптические пластинки размером около 1 миллиметра. Эти шарики свободно плавают на поверхности воды, потребляя растворенные в ней питательные вещества.
+                            </p>
+                          </div>
+                        </div>
+                      </form>
+                      
+                    </li>
+                    <li class="quiz-list__item quiz-single">
+                      <p>Qaysi o‘simliklarning bargi va poyasi yo‘q, lekin guli eng yirik gul hisoblanadi?</p>
+                      <form class="quiz-single__form answers-form">
+                        <div class="answers-item answers-item--wrong">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            raffleziya Arnoldi
+                          </p>
+                        </div>
+                        <div class="answers-item">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            sekvoyyadendron
+                          </p>
+                        </div>
+                        <div class="answers-item">
+                          <i class="bi bi-dash-lg me-3"></i>
+                          <p class="mb-0">
+                            talipot palmasi
+                          </p>
+                        </div>
+                        <div class="answers-item answers-item--right">
+                          <i class="bi bi-check-lg me-3"></i>
+                          <p class="mb-0">
+                            volfiya
+                          </p>
+                          <button class="btn btn-sm btn-light border" type="button" data-bs-toggle="collapse" data-bs-target="#why3" aria-expanded="false" aria-controls="why3">
+                            <i class="bi bi-lightbulb me-2"></i>Nega?
+                          </button>                    
+                        </div>
+                        <div class="collapse" id="why3">
+                          <div class="right-answer-info btn-main-blue">
+                            <i class="bi bi-lightbulb me-3 text-primary"></i>
+                            <p>
+                              <b>Вольфия бескорневая</b> — крохотное растение, представляющее собой плавающие на поверхности воды зелёные эллиптические пластинки размером около 1 миллиметра. Эти шарики свободно плавают на поверхности воды, потребляя растворенные в ней питательные вещества.
+                            </p>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-results">
+        <div class="container">
+          <div class="main-card mb-5">
+            <h4 class="mb-5">Shu test bo’yicha so’nggi natijalar</h4>
+            <table class="table table-striped ei-table ei-exams-table">
+              <caption class="visually-hidden">Fakultetlar, kirish ballri, kvotalar </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Test olingan sana</th>
+                  <th scope="col">Vaqt</th>
+                  <th scope="col">To’g’ri javoblar</th>
+                  <th scope="col">Aniqlik</th>
+                  <th scope="col">Umumiy</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <p><time>15 Mart, 2021</time></p>
+                    <p class="small fw-normal">15:21</p>
+                  </th>
+                  <td>
+                    <p>120</p>
+                    <p class="small">min</p>
+                  </td>
+                  <td>
+                    <p>23</p>
+                    <p class="small">/30</p>
+                  </td>
+                  <td>
+                    <p>75%</p>
+                    <p class="small">to’g’ri</p>
+                  </td>
+                  <td>
+                    <p>71.3</p>
+                    <p class="small">umumiy ball</p>
+                  </td>
+                  <td>
+                    <div class="btn btn-sm border btn-light">Qayta o’tish</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <p><time>02 Mart, 2021</time></p>
+                    <p class="small fw-normal">11:45</p>
+                  </th>
+                  <td>
+                    <p>120</p>
+                    <p class="small">min</p>
+                  </td>
+                  <td>
+                    <p>23</p>
+                    <p class="small">/30</p>
+                  </td>
+                  <td>
+                    <p>75%</p>
+                    <p class="small">to’g’ri</p>
+                  </td>
+                  <td>
+                    <p>71.3</p>
+                    <p class="small">umumiy ball</p>
+                  </td>
+                  <td>
+                    <div class="btn btn-sm border btn-light">Qayta o’tish</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <p><time>25 Fevral, 2021</time></p>
+                    <p class="small fw-normal">12:53</p>
+                  </th>
+                  <td>
+                    <p>120</p>
+                    <p class="small">min</p>
+                  </td>
+                  <td>
+                    <p>23</p>
+                    <p class="small">/30</p>
+                  </td>
+                  <td>
+                    <p>75%</p>
+                    <p class="small">to’g’ri</p>
+                  </td>
+                  <td>
+                    <p>71.3</p>
+                    <p class="small">umumiy ball</p>
+                  </td>
+                  <td>
+                    <div class="btn btn-sm border btn-light">Qayta o’tish</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <p><time>12 Yanvar, 2021</time></p>
+                    <p class="small fw-normal">16:30</p>
+                  </th>
+                  <td>
+                    <p>120</p>
+                    <p class="small">min</p>
+                  </td>
+                  <td>
+                    <p>23</p>
+                    <p class="small">/30</p>
+                  </td>
+                  <td>
+                    <p>75%</p>
+                    <p class="small">to’g’ri</p>
+                  </td>
+                  <td>
+                    <p>71.3</p>
+                    <p class="small">umumiy ball</p>
+                  </td>
+                  <td>
+                    <div class="btn btn-sm border btn-light">Qayta o’tish</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <p><time>15 Mart, 2021</time></p>
+                    <p class="small fw-normal">15:21</p>
+                  </th>
+                  <td>
+                    <p>120</p>
+                    <p class="small">min</p>
+                  </td>
+                  <td>
+                    <p>23</p>
+                    <p class="small">/30</p>
+                  </td>
+                  <td>
+                    <p>75%</p>
+                    <p class="small">to’g’ri</p>
+                  </td>
+                  <td>
+                    <p>71.3</p>
+                    <p class="small">umumiy ball</p>
+                  </td>
+                  <td>
+                    <div class="btn btn-sm border btn-light">Qayta o’tish</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>          
+        </div>
+      </section>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-6 text-end">
+            <a href="#!" class="btn btn-primary btn-lg">Testlar sahifasiga</a>
+          </div>
+          <div class="col-6 text-start">
+            <a href="#!" class="btn btn-link text-decoration-none btn-lg">Qayta ishlash</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var ctx2 = document.getElementById('myChart-dnt').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ['1 May', '2 May', '3 May', '4 May', '5 May', '6 May', '7 May'],
+              datasets: [{
+                  label: 'Ballar',
+                  data: [87, 128, 93, 165, 172, 153, 192],
+                  fill: false,
+                  borderColor: 'rgb(161, 142, 229)',
+                  tension: 0.1
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true,
+                      ticks: {
+                        stepSize: 40
+                      }
+                  }
+              }
+          }
+      });
+      var myChartDnt = new Chart(ctx2,{
+        type: 'doughnut',
+        data:{
+          labels: ['To’g’ri', 'Xato'],
+          datasets: [{
+            label: 'My First Dataset',
+            data: [253,47],
+            backgroundColor: [
+              'rgb(75, 192, 192)',
+              'rgb(255, 99, 132)'
+            ],
+            hoverOffset: 4
+          }]
+        },
+        options:{
+          plugins: {
+            legend: {
+              labels: {
+                boxWidth: 12,
+                boxHeight: 12,
+                padding: 32
+              },
+              position: 'bottom'
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

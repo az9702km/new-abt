@@ -1310,3 +1310,15 @@ body {
 .test-section {
   margin-top: 5rem;
 }
+
+.result-tablot {
+  margin-top: 2.5rem;
+}
+
+.result-graph {
+  margin-top: 1.5rem;
+}
+
+.wrong-answrs, .history-results {
+  margin-top: 2rem;
+}
