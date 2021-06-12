@@ -1276,3 +1276,11 @@ body {
 .quota-table, .edu-inst-map, .edu-inst-news {
   padding-top: 2.5rem;
 }
+
+.main-news {
+  margin-top: 2rem;
+}
+
+.main-news .news-section {
+  margin-top: 2rem;
+}
