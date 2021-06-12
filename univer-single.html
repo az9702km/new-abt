@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <title>Tashkent University</title>
+  </head>
+  <body>
+    <header class="bg-white pt-5 pt-md-0">
+      <nav class="mobile-nav mobile-nav--light position-fixed fixed-top">
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Brand name</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="mm-body">
+              <nav class="mm-body__links">
+                <ul class="mb-links list-unstyled">
+                  <li class="mb-links__item">
+                    <a class="mb-link active" aria-current="page" href="#">Asosiy</a>
+                  </li>
+                  <li class="mb-links__item clps-down">
+                    <a class="mb-link" data-bs-toggle="collapse" href="#mb-collapse" role="button" aria-expanded="false" aria-controls="mb-collapse">
+                      Oliygohlar
+                    </a>
+                    <div class="collapse" id="mb-collapse">
+                      <ul class="mb-links list-unstyled">
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Asosiy</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-maxsus</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-ta’lim</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Test</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Yangiliklar</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-maxsus</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-ta’lim</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Test</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Yangiliklar</a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <h3 class="mobile-nav-brand mb-0"><a class="link-dark" href="index.html">Navbar</a></h3>
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileNavSearch" role="button" aria-controls="mobileNavSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-top offcanvas-search" tabindex="-1" id="mobileNavSearch" aria-labelledby="mobileNavSearchLabel">
+          <div class="offcanvas-header">
+            <h5 id="mobileNavSearchLabel">Qidiruv</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex form-control border icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+            <ul class="list-unstyled history-list">
+              <li class="history-list__item">
+                Diniy oliygohlar
+              </li>
+              <li class="history-list__item">
+                O'rta ta'lim
+              </li>
+              <li class="history-list__item">
+                Xususiy oliygohlar
+              </li>
+              <li class="history-list__item">
+                Qabul 2021
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Asosiy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oliygohlar
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+            <form class="d-flex form-control icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+          </div>
+        </div>
+      </nav>    
+      <nav aria-label="breadcrumb">
+        <div class="container py-3">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a class="text-dark text-decoration-none" href="#">Bosh sahifa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Oliygohlar</li>
+          </ol>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="univer-main">
+        <div class="card bg-dark text-white border-0 position-relative">
+          <img src="images/background/universities/tuit/tuit-1.jpg" 
+               class="card-img univer-main-img covered-img" 
+               alt="tuit-1">
+          <div class="card-img-overlay p-0">
+            <div class="container h-100">
+              <div class="row justify-content-end h-100">
+                <div class="col-md-5 h-100 d-flex flex-column align-items-start">
+                  <a href="#!" class="btn btn-link link-light stretched-link gallery-link"><i class="bi bi-images me-2"></i>Barcha rasimlar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="bg-white main-shadow edu-inst-info">
+                <small class="text-uppercase">Oliy Ta’lim Muassasasi</small>
+                <h2>Toshkent axborot texnologiyalari universiteti</h2>
+                <div class="d-flex justify-content-between">
+                  <address>
+                    <a href="#!" class="link-success">
+                      <i class="bi bi-geo-alt me-2"></i>Farg’ona, Farg’ona shaxri
+                    </a>
+                  </address>
+                  <ul class="d-flex univer-links list-unstyled pl-0">
+                    <li class="univer-links__item"><address><a href="#!" class="mr-2">www.tuit.uz</a></address></li>
+                    <li class="univer-links__item"><a href="#!" class="mr-2 link-dark"><i class="bi bi-facebook"></i></a></li>
+                    <li class="univer-links__item"><a href="#!" class="mr-2 link-dark"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="univer-links__item"><a href="#!" class="mr-2 link-dark"><i class="bi bi-instagram"></i></a></li>
+                  </ul>
+                </div>
+                <h6>Subheader 1</h6>
+                <p>
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula,
+                  </p>
+                  <h6>Subheader 2</h6>
+                  <p>
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula,
+                  </p>
+                </div>
+                <p>
+                  <button class="btn btn-outline-primary border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Davomini o’qish
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5 edu-inst-contacts">
+              <dl class="row">
+                <dt class="col-md-2 text-secondary">Tel.:</dt>
+                <dd class="col-md-10"><address><a href="tel:+998913573979" class="link-secondary">+998 91 357 39 79</a><a href="tel:+998913573979" class="link-secondary">+998 99 977 47 92</a></address></dd>
+                <dt class="col-md-2 text-secondary">E-mail:</dt>
+                <dd class="col-md-10"><address><a href="mailto:tuit@gmail.com" class="link-secondary">tuit@gmail.com</a></address></dd>
+                <dt class="col-md-2 text-secondary">Manzil:</dt>
+                <dd class="col-md-10 text-secondary"><address>Toshkent, Yunusobod tumani, Amir Temur shox ko’chasi, 118</address></dd>
+                <dt class="col-md-2 text-secondary">Filiallar:</dt>
+                <dd class="col-md-10"><a href="#!" class="link-secondary">Toshkent</a><a href="#!" class="link-secondary">Samarqand</a><a href="#!" class="link-secondary">Qarshi</a><a href="#!" class="link-secondary">Jizzah</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quota-table">
+        <div class="container">
+          <div class="ei-branches bg-white main-shadow">
+            <h4 class="ei-branches__title">Qabul kvotalari va kirish ballari</h4>
+            <div class="d-flex ei-branches__toolbar">
+              <div class="d-flex flex-column me-5">
+                <label class="form-label mb-2 small">Taʼlim shakli</label>
+                <div class="btn-group" role="group" aria-label="Taʼlim shakli">
+                  <input type="radio" class="btn-check" name="tshakli" id="tshakli1" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="tshakli1">Kunduzgi</label>
+                
+                  <input type="radio" class="btn-check" name="tshakli" id="tshakli2" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="tshakli2">Sirtqi</label>
+                </div>
+              </div>
+              <div class="d-flex flex-column me-5">
+                <label class="form-label mb-2 small">Ta’lim tili</label>
+                <div class="btn-group" role="group" aria-label="Taʼlim tili">
+                  <input type="radio" class="btn-check" name="til" id="til1" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="til1">O’zb</label>
+                
+                  <input type="radio" class="btn-check" name="til" id="til2" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="til2">Rus</label>
+                
+                  <input type="radio" class="btn-check" name="til" id="til3" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="til3">Qirg’iz</label>
+                </div>
+              </div>
+              <div class="d-flex flex-column">
+                <label class="form-label mb-2 small">O‘quv yili</label>
+                <div class="btn-group" role="group" aria-label="O‘quv yili">
+                  <input type="radio" class="btn-check" name="yil" id="yil1" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="yil1">O’zb</label>
+                
+                  <input type="radio" class="btn-check" name="yil" id="yil2" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="yil2">Rus</label>
+                
+                  <input type="radio" class="btn-check" name="yil" id="yil3" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="yil3">Qirg’iz</label>
+                
+                  <input type="radio" class="btn-check" name="yil" id="yil4" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="yil4">Qirg’iz</label>
+                </div>
+              </div>
+            </div>
+            <table class="table table-striped ei-branches-table ei-table">
+              <caption class="visually-hidden">Fakultetlar, kirish ballri, kvotalar </caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Ta’lim yo’lanishi</th>
+                  <th scope="col">Shifr</th>
+                  <th scope="col">Qabul</th>
+                  <th scope="col">Tanlov</th>
+                  <th scope="col">Grant</th>
+                  <th scope="col">Shartnoma</th>
+                  <th scope="col">Imtiyozli</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">1</td>
+                  <th>Axborot xavfsizligi (sohalar bo‘yicha)</th>
+                  <td>5330300</td>
+                  <td>
+                    <p>75</p>
+                    <p class="small">15 / 60</p>
+                  </td>
+                  <td>
+                    <p>4136</p>
+                    <p class="small">55.1</p>
+                  </td>
+                  <td>182.8</td>
+                  <td>164.0</td>
+                  <td>----</td>
+                </tr>
+                <tr>
+                  <td scope="row">2</td>
+                  <th>Axborot-kommunikatsiya texnologiyalari sohasida iqtisodiyot va menejment</th>
+                  <td>5350300</td>
+                  <td>
+                    <p>28</p>
+                    <p class="small">3 / 25</p>
+                  </td>
+                  <td>
+                    <p>3601</p>
+                    <p class="small">128.6</p>
+                  </td>
+                  <td>173.2</td>
+                  <td>157.3</td>
+                  <td>----</td>
+                </tr>
+                <tr>
+                  <td scope="row">3</td>
+                  <th>Axborot-kommunikatsiya texnologiyalari sohasida kasb ta’limi</th>
+                  <td>5350400</td>
+                  <td>
+                    <p>50</p>
+                    <p class="small">10 / 40</p>
+                  </td>
+                  <td>
+                    <p>2022</p>
+                    <p class="small">55.1</p>
+                  </td>
+                  <td>138.9</td>
+                  <td>113.3</td>
+                  <td>----</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="edu-inst-map">
+        <div class="container">
+          <div class="ei-map bg-white main-shadow">
+            <h4 class="ei-map__title">Xaritadagi joylashuvi</h4>
+            <iframe class="border" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14249.57228190234!2d69.28907255631798!3d41.33923317428902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52a8f9d9414a2ad8!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINCY0L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2s!4v1622870038468!5m2!1sru!2s" width="100%" height="300" allowfullscreen="1" loading="lazy"></iframe>
+          </div>
+        </div>        
+      </section>
+      <section class="edu-inst-news">
+        <div class="container">
+          <div class="news-section main-card">
+            <div class="d-flex justify-content-between">
+              <h4 class="mb-4 ">Universitet yangiliklari</h4><a href="#!" class="float-end">Barcha yangiliklar</a>
+            </div>            
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div class="col news-card">
+                <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
+                <div class="news-card__body">
+                  <div class="d-flex mb-2">
+                    <a href="#!" class="badge bg-danger tag">abitruent</a>
+                  </div>
+                  <h6 class="news-card__title">
+                    <a href="#!" class="link-dark stretched-link" >
+                      Приём-2021: Какие новшества ожидают абитуриентов?
+                    </a>
+                  </h6>
+                  <ul class="news-info list-unstyled">
+                    <li class="news-info__item"><span>12</span>ta ko'rilgan</li>
+                    <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col news-card">
+                <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
+                <div class="news-card__body">
+                  <div class="d-flex mb-2">
+                    <a href="#!" class="badge bg-info tag">abitruent</a>
+                  </div>
+                  <h6 class="news-card__title">
+                    <a href="#!" class="link-dark">
+                      Приём-2021: Какие новшества ожидают абитуриентов?
+                    </a>
+                  </h6>
+                  <ul class="news-info list-unstyled">
+                    <li class="news-info__item"><span>12</span>ta ko'rilgan</li>
+                    <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col news-card">
+                <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
+                <div class="news-card__body">
+                  <div class="d-flex mb-2">
+                    <a href="#!" class="badge bg-success tag">abitruent</a>
+                  </div>
+                  <h6 class="news-card__title">
+                    <a href="#!" class="link-dark">
+                      Приём-2021: Какие новшества ожидают абитуриентов?
+                    </a>
+                  </h6>
+                  <ul class="news-info list-unstyled">
+                    <li class="news-info__item"><span>12</span>ta ko'rilgan</li>
+                    <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark footer-dark mt-4">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+            <h4><a href="#!" class="link-light text-decoration-none">Brand name</a></h4>
+            <ul class="nav nav-dark justify-content-center justify-content-md-start">
+              <li class="nav-item">
+                <a class="nav-link ps-md-0" href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-3 mt-md-0">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          <p class="mb-0 text-light text-center text-md-start">Ⓒ Action Media Solution, 2021 </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#!" class="link-light text-decoration-none me-5">Privacy and Policy</a>
+            <div class="dropdown text-center">
+              <button class="btn btn-sm btn-link text-light dropdown-toggle text-decoration-none" type="button" id="lang" data-bs-toggle="dropdown" aria-expanded="false">
+                uz
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="lang">
+                <li><a class="dropdown-item" href="#">uz</a></li>
+                <li><a class="dropdown-item" href="#">ru</a></li>
+                <li><a class="dropdown-item" href="#">en</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      const ctgTargets = document.querySelectorAll(".category-link");
+      const ctgLabels = document.querySelectorAll(".subcategory");
+      const backBtns = document.querySelectorAll(".btn-back");
+      
+      ctgTargets.forEach(element => {
+        element.addEventListener("click", hideSubCat);
+      });
+
+      backBtns.forEach(bkbtns => {
+        bkbtns.addEventListener("click", backCategory);
+      });
+
+      function backCategory(e){
+        let bkTaeget  = e.target.getAttribute("parent-target");
+        document.querySelector("#"+bkTaeget).classList.remove("d-none");
+
+        ctgLabels.forEach(label => {
+          if(label.getAttribute("ctg-label") === bkTaeget){
+            label.classList.add("d-none");
+          }
+        });
+      }
+
+      function hideSubCat(e){
+        let target  = e.target.getAttribute("ctg-target");
+        document.querySelector("#"+target).classList.add("d-none");
+
+        ctgLabels.forEach(label => {
+          if(label.getAttribute("ctg-label") === target){
+            label.classList.remove("d-none");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

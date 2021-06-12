@@ -707,6 +707,32 @@ body{
   }
 }
 
+.gallery-link{
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  position: static;
+  z-index: 2;
+}
+
+.gallery-link.stretched-link::after{
+  z-index: -1;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%);
+}
+
+.gallery-link.stretched-link:hover::after{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 100%);
+}
+
+.univer-main-img{
+  height: 45vh;
+  min-height: 15rem;
+  border: none;
+  border-radius: 0;
+}
+
 .img_16x9{
   $width: 14rem;
   width: $width;
@@ -717,6 +743,10 @@ body{
   $width: 5rem;
   width: $width;
   height: $width;
+}
+
+.covered-img{
+  object-fit: cover;
 }
 
 .tests-single{
@@ -1222,3 +1252,4 @@ body{
 }
 
 @import "custom/index";
+@import "custom/univer-single";

@@ -652,6 +652,32 @@ body {
   margin-right: 0;
 }
 
+.gallery-link {
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  position: static;
+  z-index: 2;
+}
+
+.gallery-link.stretched-link::after {
+  z-index: -1;
+  background: black;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery-link.stretched-link:hover::after {
+  background: black;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.univer-main-img {
+  height: 45vh;
+  min-height: 15rem;
+  border: none;
+  border-radius: 0;
+}
+
 .img_16x9 {
   width: 14rem;
   height: 7.875rem;
@@ -660,6 +686,10 @@ body {
 .img_1x1 {
   width: 5rem;
   height: 5rem;
+}
+
+.covered-img {
+  object-fit: cover;
 }
 
 .tests-single {
@@ -1231,4 +1261,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.edu-inst-info {
+  position: relative;
+  margin-top: -5.25rem;
+  z-index: 1024;
+}
+
+.edu-inst-contacts {
+  margin-top: 2rem;
+}
+
+.quota-table, .edu-inst-map, .edu-inst-news {
+  padding-top: 2.5rem;
 }
