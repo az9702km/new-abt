@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-white pb-4 pt-5 pt-md-0">
+      <nav class="mobile-nav mobile-nav--light position-fixed fixed-top">
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Brand name</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="mm-body">
+              <nav class="mm-body__links">
+                <ul class="mb-links list-unstyled">
+                  <li class="mb-links__item">
+                    <a class="mb-link active" aria-current="page" href="#">Asosiy</a>
+                  </li>
+                  <li class="mb-links__item clps-down">
+                    <a class="mb-link" data-bs-toggle="collapse" href="#mb-collapse" role="button" aria-expanded="false" aria-controls="mb-collapse">
+                      Oliygohlar
+                    </a>
+                    <div class="collapse" id="mb-collapse">
+                      <ul class="mb-links list-unstyled">
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Asosiy</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-maxsus</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-ta’lim</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Test</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Yangiliklar</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-maxsus</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-ta’lim</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Test</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Yangiliklar</a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <h3 class="mobile-nav-brand mb-0"><a class="link-dark" href="index.html">Navbar</a></h3>
+        <a class="btn btn-link mobile-nav-icon-btn" data-bs-toggle="offcanvas" href="#mobileNavSearch" role="button" aria-controls="mobileNavSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </a>
+        <div class="offcanvas offcanvas-top offcanvas-search" tabindex="-1" id="mobileNavSearch" aria-labelledby="mobileNavSearchLabel">
+          <div class="offcanvas-header">
+            <h5 id="mobileNavSearchLabel">Qidiruv</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex form-control border icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+            <ul class="list-unstyled history-list">
+              <li class="history-list__item">
+                Diniy oliygohlar
+              </li>
+              <li class="history-list__item">
+                O'rta ta'lim
+              </li>
+              <li class="history-list__item">
+                Xususiy oliygohlar
+              </li>
+              <li class="history-list__item">
+                Qabul 2021
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Asosiy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oliygohlar
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+            <form class="d-flex form-control icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+          </div>
+        </div>
+      </nav>    
+      <nav aria-label="breadcrumb">
+        <div class="container py-3">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a class="text-dark text-decoration-none" href="#">Bosh sahifa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Oliygohlar</li>
+          </ol>
+        </div>
+      </nav>
+      <div class="container py-2">
+        <h4>Davlat universitetlari (Head Title)</h4>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="filters" aria-labelledby="filtersLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="filtersLabel">Filter</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                      Category name
+                    </button>
+                  </h6>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body pt-0">
+                      <ul class="list-unstyled category-list">
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Tree level 1 Some name <span>(223)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Some name Tree level 1 <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Second Tree level 1 Some name <span>(65)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Last Tree level 1 Some name <span>(88)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body pt-0" id="first">
+                      <ul class="list-unstyled category-list">
+                        <li class="category-list__item">
+                          <a href="#!" ctg-target="first" class="category-link">Tree level 1 Some name <span>(223)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" ctg-target="first" class="category-link">Some name Tree level 1 <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" ctg-target="first" class="category-link">Second Tree level 1 Some name <span>(65)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" ctg-target="first" class="category-link">Last Tree level 1 Some name <span>(88)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="accordion-body d-none subcategory pt-0" ctg-label="first">
+                      <a href="#!" parent-target="first" class="btn btn-link btn-sm link-success btn-back"><i class="bi bi-chevron-double-left me-2"></i>Back level</a>
+                      <p class="sublist-head">Tree level 1 Some name (223)</p>
+                      <ul class="list-unstyled category-list category-list--sub">
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Tree level 1 Some name <span>(223)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Some name Tree level 1 <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Second Tree level 1 Some name <span>(65)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Last Tree level 1 Some name <span>(88)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#regions" aria-expanded="true" aria-controls="regions">
+                      Viloyatlar
+                    </button>
+                  </h6>
+                  <div id="regions" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body pt-0">
+                      <ul class="list-unstyled category-list">
+                        <li class="category-list__item">
+                          <a href="#!" 
+                             class="category-link link-submenu" 
+                             data-bs-toggle="collapse" 
+                             data-bs-target="#nam" 
+                             aria-expanded="false" 
+                             aria-controls="nam">Namangan <span>(3)</span>
+                          </a>
+                          <div class="collapse" id="nam">
+                            <ul class="list-unstyled category-list category-list--sub-ctg">
+                              <li class="category-list__item">
+                                <a href="#!" 
+                                  class="category-link link-submenu" 
+                                  data-bs-toggle="collapse" 
+                                  data-bs-target="#chust" 
+                                  aria-expanded="false" 
+                                  aria-controls="chust">Chust</a>
+                                  <div class="collapse" id="chust">
+                                    <ul class="list-unstyled category-list category-list--sub-ctg">
+                                      <li class="category-list__item">
+                                        <a href="#!" class="category-link">Namangan sh</a>
+                                      </li>
+                                      <li class="category-list__item">
+                                        <a href="#!" class="category-link">T'raqo'rg'on</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </li>
+                              <li class="category-list__item">
+                                <a href="#!" class="category-link">Namangan sh</a>
+                              </li>
+                              <li class="category-list__item">
+                                <a href="#!" class="category-link">T'raqo'rg'on</a>
+                              </li>
+                            </ul>
+                          </div>
+                          
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Toshkent <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Andijon <span>(5)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Samarqand <span>(8)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mutaxasisslik" aria-expanded="false" aria-controls="mutaxasisslik">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="mutaxasisslik" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body pt-0">
+                      <form action="" class="ctg-form">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="kinjiner" checked>
+                          <label class="form-check-label" for="kinjiner">
+                            Komputer Injinering
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="dinjiner">
+                          <label class="form-check-label" for="dinjiner">
+                            Dasturiy Injinering
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="ekonom" checked>
+                          <label class="form-check-label" for="ekonom">
+                            Iqtisodiyot
+                          </label>
+                        </div>   
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="adab" checked>
+                          <label class="form-check-label" for="adab">
+                            Adabiyot
+                          </label>
+                        </div>                  
+                      </form>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="col-md-4 d-none d-md-block">            
+            <h5 class="mt-5 mb-3 pt-2">Filter</h5>
+            <div class="accordion " id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                    Category name
+                  </button>
+                </h6>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body pt-0">
+                    <ul class="list-unstyled category-list">
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Tree level 1 Some name <span>(223)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Some name Tree level 1 <span>(49)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Second Tree level 1 Some name <span>(65)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Last Tree level 1 Some name <span>(88)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body pt-0" id="first">
+                    <ul class="list-unstyled category-list">
+                      <li class="category-list__item">
+                        <a href="#!" ctg-target="first" class="category-link">Tree level 1 Some name <span>(223)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" ctg-target="first" class="category-link">Some name Tree level 1 <span>(49)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" ctg-target="first" class="category-link">Second Tree level 1 Some name <span>(65)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" ctg-target="first" class="category-link">Last Tree level 1 Some name <span>(88)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accordion-body d-none subcategory pt-0" ctg-label="first">
+                    <a href="#!" parent-target="first" class="btn btn-link btn-sm link-success btn-back"><i class="bi bi-chevron-double-left me-2"></i>Back level</a>
+                    <p class="sublist-head">Tree level 1 Some name (223)</p>
+                    <ul class="list-unstyled category-list category-list--sub">
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Tree level 1 Some name <span>(223)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Some name Tree level 1 <span>(49)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Second Tree level 1 Some name <span>(65)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Last Tree level 1 Some name <span>(88)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#regions" aria-expanded="true" aria-controls="regions">
+                    Viloyatlar
+                  </button>
+                </h6>
+                <div id="regions" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body pt-0">
+                    <ul class="list-unstyled category-list">
+                      <li class="category-list__item">
+                        <a href="#!" 
+                           class="category-link link-submenu" 
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#nam" 
+                           aria-expanded="false" 
+                           aria-controls="nam">Namangan <span>(3)</span>
+                        </a>
+                        <div class="collapse" id="nam">
+                          <ul class="list-unstyled category-list category-list--sub-ctg">
+                            <li class="category-list__item">
+                              <a href="#!" 
+                                class="category-link link-submenu" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#chust" 
+                                aria-expanded="false" 
+                                aria-controls="chust">Chust</a>
+                                <div class="collapse" id="chust">
+                                  <ul class="list-unstyled category-list category-list--sub-ctg">
+                                    <li class="category-list__item">
+                                      <a href="#!" class="category-link">Namangan sh</a>
+                                    </li>
+                                    <li class="category-list__item">
+                                      <a href="#!" class="category-link">T'raqo'rg'on</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </li>
+                            <li class="category-list__item">
+                              <a href="#!" class="category-link">Namangan sh</a>
+                            </li>
+                            <li class="category-list__item">
+                              <a href="#!" class="category-link">T'raqo'rg'on</a>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Toshkent <span>(49)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Andijon <span>(5)</span></a>
+                      </li>
+                      <li class="category-list__item">
+                        <a href="#!" class="category-link">Samarqand <span>(8)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mutaxasisslik" aria-expanded="false" aria-controls="mutaxasisslik">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="mutaxasisslik" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body pt-0">
+                    <form action="" class="ctg-form">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="kinjiner" checked>
+                        <label class="form-check-label" for="kinjiner">
+                          Komputer Injinering
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="dinjiner">
+                        <label class="form-check-label" for="dinjiner">
+                          Dasturiy Injinering
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="ekonom" checked>
+                        <label class="form-check-label" for="ekonom">
+                          Iqtisodiyot
+                        </label>
+                      </div>   
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="adab" checked>
+                        <label class="form-check-label" for="adab">
+                          Adabiyot
+                        </label>
+                      </div>                  
+                    </form>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </aside>
+          <section class="col-md-8">
+            <div class="row d-md-none mt-4">
+              <div class="col-6 d-grid">
+                <a class="btn btn-outline-primary" data-bs-toggle="offcanvas" href="#filters" role="button" aria-controls="filters">
+                  Filter
+                </a>
+              </div>
+              <div class="dropdown col-6 d-grid">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nomi
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="sort">
+                  <li><a class="dropdown-item" href="#">Nomi</a></li>
+                  <li><a class="dropdown-item" href="#">Joyi</a></li>
+                  <li><a class="dropdown-item" href="#">Yo'lanish</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-4 mt-md-5">
+              <h5 class="mb-0">Natijalar (89ta)</h5>
+              <div class="d-md-flex d-none align-items-center">
+                Filtr:
+                <div class="btn-group ms-4">
+                  <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Nomi
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><a class="dropdown-item" href="#">Nomi</a></li>
+                    <li><a class="dropdown-item" href="#">Joyi</a></li>
+                    <li><a class="dropdown-item" href="#">Yo'lanish</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="my-2">
+            <div class="d-flex">
+              <span class="lead">Filterlar:</span>
+              <ul class="d-flex list-unstyled align-items-center filter-selection">
+                <li class="filter-selection__choice bg-white text-dark">
+                  Namangan
+                  <i class="bi bi-x ms-1"></i>
+                </li>
+                <li class="filter-selection__choice bg-white text-dark">
+                  Diniy
+                  <i class="bi bi-x ms-1"></i>
+                </li>
+                <li class="filter-selection__choice bg-white text-dark">
+                  Toshkent
+                  <i class="bi bi-x ms-1"></i>
+                </li>
+                <li class="filter-selection__choice bg-white text-dark">
+                  OTM
+                  <i class="bi bi-x ms-1"></i>
+                </li>
+                <li class="filter-selection__choice border-0 fw-bold text-secondary filter-selection__choice--clear">
+                  Tozalash
+                </li>
+              </ul>
+            </div>
+    
+            <div class="edu-inst-list">
+              <div class="edu-inst bg-white edu-inst--hrz">
+                <img src="images/universities/tuit_logo.png" class="edu-inst__img" alt="tuit">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti</a></h6>
+                  <div class="short-info">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Farg’ona</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Qabul kvotasi">4200</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Yo'lanishlar soni">34</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="O'rtacha kirish bali">178.2</div>
+                  </div>
+                  <a href="#!" class=" align-self-start mt-3">Yangiliklar</a>
+                </div>
+              </div>
+              <div class="edu-inst bg-white edu-inst--hrz">
+                <img src="images/universities/TSUL.png" class="edu-inst__img" alt="yuridik">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti</a></h6>
+                  <div class="short-info">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Farg’ona</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Qabul kvotasi">4200</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Yo'lanishlar soni">34</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="O'rtacha kirish bali">178.2</div>
+                  </div>
+                  <a href="#!" class=" align-self-start mt-3">Yangiliklar</a>
+                </div>
+              </div>
+              <div class="edu-inst bg-white edu-inst--hrz">
+                <img src="images/universities/pedagok.jpg" class="edu-inst__img" alt="pedagogik institut">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Ташкентский государственный юридический университет</a></h6>
+                  <div class="short-info">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Farg’ona</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Qabul kvotasi">5200</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Yo'lanishlar soni">18</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="O'rtacha kirish bali">220.2</div>
+                  </div>
+                  <a href="#!" class=" align-self-start mt-3">Yangiliklar</a>
+                </div>
+              </div>
+            </div>
+            <div class="edu-list-bottom">
+              <nav aria-label="Page navigation example" class="order-1 order-md-0">
+                <ul class="pagination-new mb-0">
+                  <li class="page-new-item"><a class="page-new-item__link" href="#"><i class="bi bi-chevron-double-left"></i></a></li>
+                  <li class="page-new-item"><a class="page-new-item__link page-new-item__link--active" href="#">1</a></li>
+                  <li class="page-new-item"><a class="page-new-item__link" href="#">2</a></li>
+                  <li class="page-new-item"><a class="page-new-item__link" href="#">3</a></li>
+                  <li class="page-new-item"><a class="page-new-item__link" href="#"><i class="bi bi-chevron-double-right"></i></a></li>
+                </ul>
+              </nav>
+              <div class="d-flex align-items-center order-0 mb-3 mb-md-0 order-md-1">
+                Ko'rsatish:
+                <div class="btn-group ms-4" >
+                  <button type="button" class="btn btn-sm btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    50
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" style="min-width: 4rem">
+                    <li><a class="dropdown-item" href="#">20</a></li>
+                    <li><a class="dropdown-item" href="#">50</a></li>
+                    <li><a class="dropdown-item" href="#">80</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-dark footer-dark mt-4">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+            <h4><a href="#!" class="link-light text-decoration-none">Brand name</a></h4>
+            <ul class="nav nav-dark justify-content-center justify-content-md-start">
+              <li class="nav-item">
+                <a class="nav-link ps-md-0" href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-3 mt-md-0">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          <p class="mb-0 text-light text-center text-md-start">Ⓒ Action Media Solution, 2021 </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#!" class="link-light text-decoration-none me-5">Privacy and Policy</a>
+            <div class="dropdown text-center">
+              <button class="btn btn-sm btn-link text-light dropdown-toggle text-decoration-none" type="button" id="lang" data-bs-toggle="dropdown" aria-expanded="false">
+                uz
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="lang">
+                <li><a class="dropdown-item" href="#">uz</a></li>
+                <li><a class="dropdown-item" href="#">ru</a></li>
+                <li><a class="dropdown-item" href="#">en</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      const ctgTargets = document.querySelectorAll(".category-link");
+      const ctgLabels = document.querySelectorAll(".subcategory");
+      const backBtns = document.querySelectorAll(".btn-back");
+      
+      ctgTargets.forEach(element => {
+        element.addEventListener("click", hideSubCat);
+      });
+
+      backBtns.forEach(bkbtns => {
+        bkbtns.addEventListener("click", backCategory);
+      });
+
+      function backCategory(e){
+        let bkTaeget  = e.target.getAttribute("parent-target");
+        document.querySelector("#"+bkTaeget).classList.remove("d-none");
+
+        ctgLabels.forEach(label => {
+          if(label.getAttribute("ctg-label") === bkTaeget){
+            label.classList.add("d-none");
+          }
+        });
+      }
+
+      function hideSubCat(e){
+        let target  = e.target.getAttribute("ctg-target");
+        document.querySelector("#"+target).classList.add("d-none");
+
+        ctgLabels.forEach(label => {
+          if(label.getAttribute("ctg-label") === target){
+            label.classList.remove("d-none");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
