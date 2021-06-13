@@ -298,6 +298,7 @@ body{
     padding: 0;    
   }
   .news-card__title{
+    margin-top: 0;
     margin-bottom: .5rem;
   }
   .news-info{
@@ -315,7 +316,15 @@ body{
 }
 
 .live-news{
-  padding: 2rem;
+  padding: 1rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+
+  @include tablet{
+    padding: 2rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .news-info{
@@ -785,7 +794,7 @@ body{
 
 .news-card--hr{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   &:not(:last-child){
     margin-bottom: 1.5rem;
@@ -793,14 +802,44 @@ body{
   
   .news-card__img{
     flex-shrink: 0;
-    margin-right: 1.5rem;
     object-fit: cover;
+    width: 100%;
+    height: (9/16*100%);
   }
+
+  @include tablet{
+    flex-direction: row;
+    align-items: center;
+
+    .news-card__img{
+      width: 8rem;
+      height: (12/16*8rem);
+      margin-right: 1rem;
+    }
+  }
+
+  @include laptop-sm{
+    .news-card__img{
+      width: 12rem;
+      height: (9/16*12rem);
+      margin-right: 1rem;
+    }
+  }
+
+  @include laptop-md{
+    .news-card__img{
+      width: 14rem;
+      height: (9/16*14rem);
+      margin-right: 1rem;
+    }
+  }
+
 }
 
 .news-card--hot{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -809,10 +848,32 @@ body{
 
   .news-card__body{
     flex-grow: 1;
-    margin-right: 1.5rem;
+    order: 2;
   }
   .news-card__img{
+    margin-top: 1rem;
     margin-right: 0;
+    order: 1;
+    width: 50%;
+  }
+
+  @include tablet{
+    flex-direction: row;
+    align-items: center;
+
+    .news-card__body{
+      margin-right: 1.5rem;
+      order: 1;
+    }
+    
+    .news-card__img{
+      margin-right: 0;
+      margin-top: 0;
+      order: 2;
+      width: 5rem;
+      height: 5rem;
+    }
+
   }
 }
 
@@ -840,18 +901,6 @@ body{
   min-height: 15rem;
   border: none;
   border-radius: 0;
-}
-
-.img_16x9{
-  $width: 14rem;
-  width: $width;
-  height: 9 / 16 * $width;
-}
-
-.img_1x1{
-  $width: 5rem;
-  width: $width;
-  height: $width;
 }
 
 .covered-img{
