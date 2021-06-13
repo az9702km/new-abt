@@ -11,3 +11,13 @@
 .quota-table,.edu-inst-map,.edu-inst-news{
   padding-top: 2.5rem;
 }
+
+.ei-branches,.ei-map,.news-section{
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+  
+  @include tablet{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

@@ -334,6 +334,7 @@ body{
     padding-right: .875rem;
     color: #6c757d;
     content: '·';
+    height: 100%;
   }
 }
 
@@ -375,6 +376,22 @@ body{
   }
 }
 
+.special-bar--hr{
+  &::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar
+  {
+    height: .25rem;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    background-color: $light-300;
+  }
+}
 
 .btn-check:active+.tag, .btn-check:checked+.tag, .tag.active, .tag:active, .show>.tag.dropdown-toggle{
   color: $dark-100;
@@ -513,11 +530,113 @@ body{
   }
 }
 
+.ei-branches-table-v2 .ei-table{
+
+  tbody tr{
+    background-color: white;
+  }
+  
+  tr:nth-child(even){
+    background-color: $light-100;
+  }
+}
+
+.ei-branches-table-v2{
+  @media screen and (max-width: 576px) {
+    thead{
+      display: none;
+    }
+  
+    table tr{
+      display: block;
+      margin-bottom: .625rem;
+      border-bottom: 2px solid $light-200;
+    }
+  
+    tbody th{
+      display: block;
+    }
+  
+    tbody tr:nth-child(even) td{
+      border-bottom: 1px solid darken($color: $light-100, $amount: 3);
+    }
+  
+    tbody tr:nth-child(even) th{
+      border-bottom: 1px solid darken($color: $light-100, $amount: 3);
+    }
+  
+    table td{
+      border-bottom: 1px solid $light-100;
+      display: block;
+      text-align: right;
+    }
+    table th{
+      border-bottom: 1px solid $light-100;
+    }
+  
+    table td::before{
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      font-size: .75rem;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }    
+  }
+}
+
+.sticky-cell{
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  filter: drop-shadow(0 0 30px rgba($dark-100, .05));
+
+  @include tablet{
+    filter: none;
+  }
+}
+
 .ei-branches-table{
-  td{
-    min-width: 4rem;
-    max-width: 6.75rem;
-    width: 6.75rem;
+  width: 100%;
+  overflow-x: scroll;
+  
+  tr:nth-child(even) td, tr:nth-child(even) th {
+    background-color: $light-100;
+  }
+
+  tr td,tr th {
+    background-color: white;
+  }
+
+  thead th:not(:first-child){
+    min-width: 6.5rem;
+
+    @include tablet{
+      min-width: unset;
+    }
+
+    @include laptop-sm{
+      min-width: 6.5rem;
+    }
+  }
+
+  tr td:first-child, thead tr th:first-child{
+    display: none;
+
+    @include tablet{
+      display: table-cell;
+    }
+  }
+
+  thead .sticky-cell{
+    min-width: 10rem;
+
+    @include laptop-sm{
+      min-width: 19rem;
+    }
   }
 }
 
@@ -535,21 +654,11 @@ body{
 }
 
 .ei-branches{
-  padding: 2rem;
-
   &__title{
     margin-bottom: 2rem;
   }
 
   &__toolbar{
-    margin-bottom: 2rem;
-  }
-}
-
-.ei-map{
-  padding: 2rem;
-
-  &__title{
     margin-bottom: 2rem;
   }
 }
