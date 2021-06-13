@@ -941,14 +941,23 @@ body{
 
 .nav-tabs--line{
   border-bottom: 1px solid $light-300;
+
+  .nav-link.active{
+    background-color: transparent;
+  }
+
+  .nav-link:focus{
+    color: $primary;
+    border-color: transparent transparent $primary;
+  }
 }
 
 .nav-tabs--line .nav-link{
+  border-bottom-width: 2px;
   color: $dark-100;
 }
 
 .nav-tabs--line .nav-link.active{
-  border-bottom-width: 2px;
   border-color: transparent transparent $dark-100;
   font-weight: 600;
   color: $dark-100;
@@ -1263,3 +1272,5 @@ body{
 @import "custom/tests";
 @import "custom/test";
 @import "custom/test-results";
+@import "custom/search-results";
+@import "custom/errors";

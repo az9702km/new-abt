@@ -1,0 +1,16 @@
+.error{
+  margin-top: 2rem;
+}
+
+.useful-links-section{
+  margin-top: 2rem;
+}
+
+.useful-links-section ul li{
+  a{
+    text-decoration: none;
+  }
+  &:not(:last-child){
+    margin-bottom: 1rem;
+  }
+}

@@ -884,12 +884,21 @@ body {
   border-bottom: 1px solid #B9B6C2;
 }
 
+.nav-tabs--line .nav-link.active {
+  background-color: transparent;
+}
+
+.nav-tabs--line .nav-link:focus {
+  color: #473198;
+  border-color: transparent transparent #473198;
+}
+
 .nav-tabs--line .nav-link {
+  border-bottom-width: 2px;
   color: #12101A;
 }
 
 .nav-tabs--line .nav-link.active {
-  border-bottom-width: 2px;
   border-color: transparent transparent #12101A;
   font-weight: 600;
   color: #12101A;
@@ -1321,4 +1330,28 @@ body {
 
 .wrong-answrs, .history-results {
   margin-top: 2rem;
+}
+
+.searched-news {
+  margin-top: 2rem;
+}
+
+.search-section {
+  margin-top: 2rem;
+}
+
+.error {
+  margin-top: 2rem;
+}
+
+.useful-links-section {
+  margin-top: 2rem;
+}
+
+.useful-links-section ul li a {
+  text-decoration: none;
+}
+
+.useful-links-section ul li:not(:last-child) {
+  margin-bottom: 1rem;
 }
