@@ -1,3 +1,74 @@
 .comment-section,.article-main{
   margin-top: 2rem;
 }
+
+.article-info{
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.article-subheader{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .12em;
+}
+
+.comment-section{
+  margin-right: -.75rem;
+  margin-left: -.75rem;  
+}
+
+.article-related-tags{
+  display: flex;
+  flex-direction: column;
+
+  @include tablet{
+    flex-direction: row;
+  }
+}
+
+.related-taglist{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  @include tablet{
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
+}
+
+.article{
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+  p.lead{
+    margin-bottom: 2.5rem;
+  }
+  h5{
+    margin-bottom: 1rem;
+  }
+
+  .blq-figure{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .article-video{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .article-text{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @include tablet{
+
+    .article-text{
+      margin-left: 5rem;
+    }
+
+  }
+}
+

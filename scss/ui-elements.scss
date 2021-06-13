@@ -498,7 +498,8 @@ body{
 }
 
 .pop-news{
-  padding: 2rem;
+  margin-right: -.75rem;
+  margin-left: -.75rem;  
 }
 
 .ei-table{
@@ -678,20 +679,36 @@ body{
 
 .article-info{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include tablet{
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .article-author{
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 
   &__photo{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem !important;
+    height: 2rem !important;
     object-fit: cover;
     border-radius: 50%;
-    
+  }
+
+  @include tablet{
+    margin-bottom: 0;
+
+    &__photo{
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+
+
   }
 }
 
@@ -739,14 +756,6 @@ body{
   padding: 1.5rem 0;
   border-top: 2px solid $light-300;
   border-bottom: 2px solid $light-300;
-}
-
-.article{
-  padding: 2rem;
-}
-
-.comment-section{
-  padding: 2rem;
 }
 
 .full-comments-section{
@@ -855,6 +864,7 @@ body{
     margin-right: 0;
     order: 1;
     width: 50%;
+    height: 5rem;
   }
 
   @include tablet{

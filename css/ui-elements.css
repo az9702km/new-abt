@@ -455,7 +455,8 @@ body {
 }
 
 .pop-news {
-  padding: 2rem;
+  margin-right: -.75rem;
+  margin-left: -.75rem;
 }
 
 .ei-table.table > :not(:last-child) > :last-child > * {
@@ -625,20 +626,38 @@ body {
 
 .article-info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .article-info {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .article-author {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .article-author__photo {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem !important;
+  height: 2rem !important;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .article-author {
+    margin-bottom: 0;
+  }
+  .article-author__photo {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
 }
 
 .ava {
@@ -682,14 +701,6 @@ body {
   padding: 1.5rem 0;
   border-top: 2px solid #B9B6C2;
   border-bottom: 2px solid #B9B6C2;
-}
-
-.article {
-  padding: 2rem;
-}
-
-.comment-section {
-  padding: 2rem;
 }
 
 .full-comments-section {
@@ -800,6 +811,7 @@ body {
   margin-right: 0;
   order: 1;
   width: 50%;
+  height: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1471,6 +1483,80 @@ body {
 
 .comment-section, .article-main {
   margin-top: 2rem;
+}
+
+.article-info {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.article-subheader {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .12em;
+}
+
+.comment-section {
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+}
+
+.article-related-tags {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .article-related-tags {
+    flex-direction: row;
+  }
+}
+
+.related-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .related-taglist {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
+}
+
+.article {
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+}
+
+.article p.lead {
+  margin-bottom: 2.5rem;
+}
+
+.article h5 {
+  margin-bottom: 1rem;
+}
+
+.article .blq-figure {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.article .article-video {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.article .article-text {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .article .article-text {
+    margin-left: 5rem;
+  }
 }
 
 .tests-section {
