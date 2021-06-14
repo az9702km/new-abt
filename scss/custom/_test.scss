@@ -5,8 +5,29 @@
   right: 0;
   background-color: white;
   box-shadow: 0 0 30px 0 rgba($color: $primary, $alpha: .05);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .test-section{
-  margin-top: 5rem;
+  margin-top: 2.5rem;
+
+  @include tablet{
+    margin-top: 5rem;
+  }
+}
+
+.quiz-section{
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+
+  @include tablet{
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+.quiz-header{
+  text-align: center;
+  margin-bottom: 2rem;
 }

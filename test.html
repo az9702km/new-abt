@@ -14,8 +14,66 @@
   </head>
   <body>
     <main>
-      <section class="test-nav-section">
-        <div class="container py-3">
+      <section class="mobile-test-nav d-md-none">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="text-muted">4/30</span>
+            <span class="text-success">2:25:34</span>
+          </div>
+        </div>
+      </section>
+      <section class="mobile-action-bottom d-md-none">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="submit" class="btn btn-link btn-sm text-decoration-none">Tugatish</button>
+            <button type="button" class="btn btn-sm btn-light border position-relative toggler">
+              Savol <i class="bi bi-chevron-up"></i>
+    
+              <div class="main-card tests-nav tests-nav--mobile border p-3">
+                <h6>Savollar</h6>
+                <nav aria-label="Page navigation example" class="flex-fill drag-scroll">
+                  <ul class="pagination-new justify-content-center mb-0 flex-wrap row row-cols-auto g-2">
+                    <li class="page-new-item col"><a class="page-new-item__link page-new-item__link--active" href="#1">1</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#2">2</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#3">3</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#4">4</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link page-new-item__link--active" href="#5">5</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#6">6</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">7</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">8</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link page-new-item__link--active" href="#!">9</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">10</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">11</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">12</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link page-new-item__link--active" href="#!">13</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">14</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">15</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">16</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link page-new-item__link--active" href="#!">17</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">18</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">19</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">20</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">21</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">22</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">23</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">24</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">25</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">26</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">27</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">28</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">29</a></li>
+                    <li class="page-new-item col"><a class="page-new-item__link" href="#!">30</a></li>
+                  </ul>
+                </nav>
+                
+              </div>
+            </button>
+            
+          </div>
+        </div>
+      </section>
+      <section class="test-nav-section d-none d-md-flex">
+        <div class="container">
           <div class="row align-items-center">
             <div class="col-md-3">
               <div class="d-flex justify-content-between align-items-center">
@@ -69,7 +127,7 @@
                 <div class="main-card tests-nav border p-3">
                   <h6>Savollar</h6>
                   <nav aria-label="Page navigation example" class="flex-fill drag-scroll">
-                    <ul class="pagination-new mb-0 flex-wrap row row-cols-auto g-2">
+                    <ul class="pagination-new justify-content-center mb-0 flex-wrap row row-cols-auto g-2">
                       <li class="page-new-item col"><a class="page-new-item__link page-new-item__link--active" href="#1">1</a></li>
                       <li class="page-new-item col"><a class="page-new-item__link" href="#2">2</a></li>
                       <li class="page-new-item col"><a class="page-new-item__link" href="#3">3</a></li>
@@ -120,14 +178,14 @@
       </section>
       <section class="test-section">
         <div class="container">
-          <div class="main-card">
+          <div class="main-card quiz-section">
             <div class="row justify-content-center">
-              <div class="col-md-8">
+              <div class="col-lg-8">
                 <div class="quiz">
                   <h4 class="quiz-header">
                     Subject name
                   </h4>
-                  <ol class="quiz-list">
+                  <ol class="quiz-list" id="quiz-list">
                     <li class="quiz-list__item quiz-single" id="1">
                       <p>Qaysi o‘simliklarning bargi va poyasi yo‘q, lekin guli eng yirik gul hisoblanadi?</p>
                       <form class="quiz-single__form">
@@ -320,14 +378,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-      
 
-      let toggler = document.querySelector('.toggler');
-      let el = document.querySelector('.tests-nav');
+      let toggler = document.querySelectorAll('.toggler');
 
-      toggler.onclick = function() {
-        el.classList.toggle('tests-nav--active');
-      }
+      toggler.forEach(btn => {
+        btn.addEventListener('click', ()=>{
+          btn.lastElementChild.classList.toggle('tests-nav--active');
+        })
+      });
+
       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)

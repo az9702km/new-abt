@@ -1,3 +1,13 @@
 .tests-section{
   margin-top: 2rem;
 }
+
+.tests-list-section{
+  margin-left: -.75rem;
+  margin-right: -.75rem;
+
+  @include tablet{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -919,28 +919,53 @@ body{
 
 .tests-single{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   padding: 1.25rem 0;
 
   &:not(:last-child){
     border-bottom: 1px solid $light-200;
   }
 
+  &__body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+  }
+
   &__name {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     a{
       text-decoration: none;
     }    
   }
+
+  @include tablet{
+    flex-direction: row;
+    align-items: center;
+
+    &__body{
+      margin-bottom: 0;
+    }
+
+    &__name{
+      margin-bottom: .5rem;
+    }
+  }
 }
 
 .tests-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 0;
 
   &__item{
 
     &:not(:last-child){
-      margin-right: 1.5rem;
+      margin-right: 0;
+      margin-bottom: .5rem;
     }
 
     color: $dark-200;
@@ -952,6 +977,16 @@ body{
       margin-left: .5rem;
     }
   }
+
+  @include tablet{
+    flex-direction: row;
+    align-items: center;
+
+    &__item:not(:last-child){
+      margin-right: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .btn{
@@ -959,13 +994,39 @@ body{
 }
 
 .quiz-list{
+  padding-left: 1.25rem;
   li{
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
+}
+
+.mobile-test-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba($color: $primary, $alpha: .05);
+}
+.mobile-action-bottom{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba($color: $primary, $alpha: .05);
+
 }
 
 .quiz-single{
   padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  margin-top: -3rem;
+  margin-bottom: 2.5rem;
 
   p{
     font-size: 1.25rem;
@@ -973,7 +1034,6 @@ body{
 
   &:not(:last-child){
     border-bottom: 1px solid $light-100;
-    margin-bottom: 2.5rem;
   }
 
   &__form{
@@ -993,6 +1053,12 @@ body{
     }
   }
 
+  @include tablet{
+    margin-top: -7rem;
+    margin-bottom: 2.5rem;
+    padding-top: 7rem;
+  }
+
 }
 
 .full-nav-swithcer{
@@ -1006,6 +1072,14 @@ body{
   position: absolute;
   right: 0;
   display: none;
+  text-align: center;
+}
+.tests-nav.tests-nav--mobile{
+  position: fixed;
+  left: 0;
+  bottom: 3rem;
+  right: 0;
+  width: unset;
 }
 
 .tests-nav.tests-nav--active{

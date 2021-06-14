@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
-    <title>Article</title>
+    <title>Testlar</title>
   </head>
   <body>
     <header class="bg-white pt-5 pt-md-0">
@@ -153,7 +153,7 @@
         <div class="container py-3">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a class="text-dark text-decoration-none" href="#">Bosh sahifa</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Oliygohlar</li>
+            <li class="breadcrumb-item active" aria-current="page">Testlar</li>
           </ol>
         </div>
       </nav>
@@ -161,8 +161,140 @@
     <main>
       <section class="tests-section">
         <div class="container">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="filters" aria-labelledby="filtersLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="filtersLabel">Filter</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+              <div class="accordion " id="testfilters">
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="subjects">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#subjects-open" aria-expanded="true" aria-controls="subjects-open">
+                      Fanlar
+                    </button>
+                  </h6>
+                  <div id="subjects-open" class="accordion-collapse collapse show" aria-labelledby="subjects">
+                    <div class="accordion-body pt-0">
+                      <ul class="list-unstyled category-list">
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Matematika <span>(223)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Fizika <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Ona tili <span>(65)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Biologiya <span>(88)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Kimyo <span>(223)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Tarix <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Geografiya <span>(65)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Huquq <span>(88)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Informatika <span>(49)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Nemis tili <span>(65)</span></a>
+                        </li>
+                        <li class="category-list__item">
+                          <a href="#!" class="category-link">Ingliz tili <span>(88)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion mt-4" id="testfilters">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="quests">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#questions" aria-expanded="false" aria-controls="questions">
+                      Savollar soni
+                    </button>
+                  </h2>
+                  <div id="questions" class="accordion-collapse collapse" aria-labelledby="quests">
+                    <div class="accordion-body pt-0">
+                      <form action="" class="ctg-form">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="questionsNum" value="0" id="ten" checked>
+                          <label class="form-check-label" for="ten">
+                            10
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="questionsNum" value="0" id="twenty">
+                          <label class="form-check-label" for="twenty">
+                            20
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="questionsNum" value="0" id="thirty" checked>
+                          <label class="form-check-label" for="thirty">
+                            30
+                          </label>
+                        </div>               
+                      </form>
+                    </div>                  
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="time">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#timing" aria-expanded="false" aria-controls="timing">
+                      Umumiy vaqt
+                    </button>
+                  </h2>
+                  <div id="timing" class="accordion-collapse collapse" aria-labelledby="time">
+                    <div class="accordion-body pt-0">
+                      <form action="" class="ctg-form">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timer" value="0" id="twmin" checked>
+                          <label class="form-check-label" for="twmin">
+                            20 daqiqa
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timer" value="0" id="frmin">
+                          <label class="form-check-label" for="frmin">
+                            40 daqiqa
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timer" value="0" id="anhour">
+                          <label class="form-check-label" for="anhour">
+                            1 soat
+                          </label>
+                        </div>    
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timer" value="0" id="onehalf">
+                          <label class="form-check-label" for="onehalf">
+                            1.5 soat
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="timer" value="0" id="twh">
+                          <label class="form-check-label" for="twh">
+                            2 soat
+                          </label>
+                        </div>         
+                      </form>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
-            <aside class="col-md-3 d-none d-md-block">
+            <aside class="col-lg-3 d-none d-lg-block">
               <h5 class="mb-3 pt-2">Filter</h5>
               <div class="accordion " id="testfilters">
                 <div class="accordion-item">
@@ -289,14 +421,31 @@
                 </div>
               </div>
             </aside>
-            <section class="col-md-9">
+            <section class="col-lg-9">
+              <div class="row d-lg-none my-4">
+                <div class="col-6 d-grid">
+                  <a class="btn btn-outline-primary" data-bs-toggle="offcanvas" href="#filters" role="button" aria-controls="filters">
+                    Filter
+                  </a>
+                </div>
+                <div class="dropdown col-6 d-grid">
+                  <button class="btn btn-outline-primary dropdown-toggle" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nomi
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="sort">
+                    <li><a class="dropdown-item" href="#">Nomi</a></li>
+                    <li><a class="dropdown-item" href="#">Joyi</a></li>
+                    <li><a class="dropdown-item" href="#">Yo'lanish</a></li>
+                  </ul>
+                </div>
+              </div>
               <h5 class=" mb-3 pt-2">Eng ommabop testlar</h5>
-              <div class="main-card">
+              <div class="main-card tests-list-section">
                 <div class="tests-list">
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Qoldiqli bo‘lish</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -305,9 +454,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Oxirgi raqam</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -316,9 +465,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Perimetri, medianasi, bissektrisasi va balandligi. Uchburchakning o‘rta chizig‘i</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -327,9 +476,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Oxirgi raqam</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -338,9 +487,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Perimetri, medianasi, bissektrisasi va balandligi. Uchburchakning o‘rta chizig‘i</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -349,9 +498,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Qoldiqli bo‘lish</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -360,9 +509,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Perimetri, medianasi, bissektrisasi va balandligi. Uchburchakning o‘rta chizig‘i</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -371,9 +520,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Qoldiqli bo‘lish</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -382,9 +531,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Oddiy kasrlar</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -393,9 +542,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Perimetri, medianasi, bissektrisasi va balandligi. Uchburchakning o‘rta chizig‘i</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -404,9 +553,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Oddiy kasrlar</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
@@ -415,9 +564,9 @@
                     <a href="#!" class="btn btn-secondary-new">Boshlash</a>
                   </div>
                   <div class="tests-single">
-                    <div class="d-flex flex-column flex-fill">
+                    <div class="tests-single__body">
                       <h6 class="tests-single__name"><a href="#!" class="cta-link">Perimetri, medianasi, bissektrisasi va balandligi. Uchburchakning o‘rta chizig‘i</a></h6>
-                      <ul class="list-unstyled d-flex tests-info">
+                      <ul class="list-unstyled tests-info">
                         <li class="tests-info__item">Ishlanishlar:<span class="text-primary">235</span></li>
                         <li class="tests-info__item">O’rt. ball:<span class="text-info">256.3</span></li>
                         <li class="tests-info__item">Reyting:<span class="text-warning">4.8</span></li>
