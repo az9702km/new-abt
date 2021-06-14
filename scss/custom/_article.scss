@@ -15,7 +15,12 @@
 
 .comment-section{
   margin-right: -.75rem;
-  margin-left: -.75rem;  
+  margin-left: -.75rem;
+
+  @include tablet{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .article-related-tags{
@@ -41,6 +46,7 @@
 .article{
   margin-right: -.75rem;
   margin-left: -.75rem;
+
   p.lead{
     margin-bottom: 2.5rem;
   }
@@ -64,6 +70,8 @@
   }
 
   @include tablet{
+    margin-right: 0;
+    margin-left: 0;
 
     .article-text{
       margin-left: 5rem;

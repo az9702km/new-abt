@@ -459,6 +459,13 @@ body {
   margin-left: -.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .pop-news {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .ei-table.table > :not(:last-child) > :last-child > * {
   border-bottom-color: #DEDCE5;
   border-top: 1px solid #DEDCE5;
@@ -1118,6 +1125,7 @@ body {
 
 .action-btn-group {
   display: flex;
+  justify-content: center;
 }
 
 .action-btn-group .btn {
@@ -1257,11 +1265,16 @@ body {
 }
 
 .nav-tabs--line {
+  flex-wrap: nowrap;
   border-bottom: 1px solid #B9B6C2;
 }
 
 .nav-tabs--line .nav-link.active {
   background-color: transparent;
+}
+
+.nav-tabs--line .nav-item {
+  flex-shrink: 0;
 }
 
 .nav-tabs--line .nav-link:focus {
@@ -1589,6 +1602,24 @@ body {
   top: 3.5rem;
 }
 
+.tg-subsc {
+  margin-top: 2rem;
+}
+
+.univer-main-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .univer-main-links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .hero {
   padding-top: 6.75rem;
   padding-bottom: 7rem;
@@ -1707,6 +1738,13 @@ body {
   margin-left: -.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .comment-section {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .article-related-tags {
   display: flex;
   flex-direction: column;
@@ -1760,6 +1798,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .article {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .article .article-text {
     margin-left: 5rem;
   }
