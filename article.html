@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/ui-elements.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
@@ -234,6 +236,35 @@
                       Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget
                     </p>
                   </article>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 univer-gallery">
+                      <figure class="col" itemprop="associatedMedia" itemscope>
+                        <a href="images/background/universities/tuit/tuit-3.jpg"  itemprop="contentUrl" data-size="1024x683">
+                            <img src="images/background/universities/tuit/tuit-3.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                      </figure>                
+                      <figure class="col" itemprop="associatedMedia" itemscope>
+                        <a href="images/background/universities/tuit/tuit-2.jpg"  itemprop="contentUrl" data-size="1024x683">
+                            <img src="images/background/universities/tuit/tuit-2.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption class="figure-caption text-mute mt-2" itemprop="caption description">Image caption</figcaption>
+                      </figure>                 
+                      <figure class="col" itemprop="associatedMedia" itemscope>
+                        <a href="images/background/universities/tuit/tuit-1.jpg"  itemprop="contentUrl" data-size="1024x683">
+                            <img src="images/background/universities/tuit/tuit-1.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                      </figure>           
+                      <figure class="col" itemprop="associatedMedia" itemscope>
+                        <a href="images/background/universities/tuit/tuit-4.jpg"  itemprop="contentUrl" data-size="1024x683">
+                            <img src="images/background/universities/tuit/tuit-4.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                      </figure>                 
+                      <figure class="col" itemprop="associatedMedia" itemscope>
+                        <a href="images/background/universities/tuit/tuit-5.jpg"  itemprop="contentUrl" data-size="1024x683">
+                            <img src="images/background/universities/tuit/tuit-5.jpg" class="img-fluid" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                        <figcaption class="figure-caption text-mute mt-2" itemprop="caption description">Qishgi TUIT</figcaption>
+                      </figure>
+                  </div>
                   <figure class="blq-figure">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M18.3333 30V16.6667H15.2L18.5333 10H8.96667L5 17.9333V30H18.3333ZM15 26.6667H8.33333V18.7333L11.0333 13.3333H13.1333L9.8 20H15V26.6667ZM35 30V16.6667H31.8667L35.2 10H25.6333L21.6667 17.9333V30H35ZM31.6667 26.6667H25V18.7333L27.7 13.3333H29.8L26.4667 20H31.6667V26.6667Z" fill="#12101A"/>
@@ -582,8 +613,8 @@
                 </div>
               </section>                        
             </div>
-            <aside class="col-lg-4 mt-5 mt-lg-0">
-              <div class="main-card pop-news">
+            <aside class="col-lg-4">
+              <div class="main-card pop-news side-sticky">
                 <h4>Ommabop</h4>
                 <div class="pop-news__list">
                   <div class="news-card news-card--pop d-flex flex-row mb-4">
@@ -656,6 +687,72 @@
           </div>
         </div>
       </section> 
+      
+      <!-- Root element of PhotoSwipe. Must have class pswp. -->
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg" style="background:rgba(0, 0, 0, .85)"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+              </div>
+
+            </div>
+
+      </div>
     </main>
 
     <footer class="bg-dark footer-dark mt-4">
@@ -755,5 +852,11 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+    <script  src="js/custom.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>

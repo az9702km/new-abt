@@ -432,55 +432,6 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-
-      let toggler = document.querySelectorAll('.toggler');
-
-      toggler.forEach(btn => {
-        btn.addEventListener('click', ()=>{
-          btn.lastElementChild.classList.toggle('tests-nav--active');
-        })
-      });
-
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-      });
-      
-      const dragScroll = document.querySelectorAll('.drag-scroll');
-
-      let isDown = 0;
-      let startX;
-      let scrollLeft;
-
-      dragScroll.forEach( dragItem => {
-
-        dragItem.addEventListener('mousedown', (e) => {
-          isDown = 1;
-          startX = e.pageX - dragItem.offsetLeft;
-          scrollLeft = dragItem.scrollLeft;
-        });
-
-        dragItem.addEventListener('mouseleave', () => {
-          isDown = 0;
-
-        });
-
-        dragItem.addEventListener('mouseup', () => {
-          isDown = 0;
-
-        });
-
-        dragItem.addEventListener('mousemove', (e) => {
-          if(!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - dragItem.offsetLeft; 
-          const walk = (x - startX) * 1.4; 
-          dragItem.scrollLeft = scrollLeft - walk;
-        });
-
-      });
-    </script>
+    <script src="js/custom.js"></script>
   </body>
 </html>

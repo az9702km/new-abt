@@ -551,60 +551,6 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var ctx2 = document.getElementById('myChart-dnt').getContext('2d');
-      var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-              labels: ['1 May', '2 May', '3 May', '4 May', '5 May', '6 May', '7 May'],
-              datasets: [{
-                  label: 'Ballar',
-                  data: [87, 128, 93, 165, 172, 153, 192],
-                  fill: false,
-                  borderColor: 'rgb(161, 142, 229)',
-                  tension: 0.1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true,
-                      ticks: {
-                        stepSize: 40
-                      }
-                  }
-              }
-          }
-      });
-      var myChartDnt = new Chart(ctx2,{
-        type: 'doughnut',
-        data:{
-          labels: ['To’g’ri', 'Xato'],
-          datasets: [{
-            label: 'My First Dataset',
-            data: [253,47],
-            backgroundColor: [
-              'rgb(75, 192, 192)',
-              'rgb(255, 99, 132)'
-            ],
-            hoverOffset: 4
-          }]
-        },
-        options:{
-          plugins: {
-            legend: {
-              labels: {
-                boxWidth: 12,
-                boxHeight: 12,
-                padding: 32
-              },
-              position: 'bottom'
-            }
-          }
-        }
-      });
-    </script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
