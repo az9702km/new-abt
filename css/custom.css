@@ -11568,7 +11568,7 @@ body {
 
 .ava {
   width: 3rem;
-  height: 3rem;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -12295,6 +12295,10 @@ header nav > .container {
 .ctg-form .form-check {
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+.navbar-nav .nav-item {
+  flex-shrink: 0;
 }
 
 .hero {

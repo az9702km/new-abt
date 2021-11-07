@@ -436,3 +436,9 @@ var myChartDnt = new Chart(ctx2,{
     }
   }
 });
+
+
+/*
+
+some code about password
+*/
