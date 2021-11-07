@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-white">
+      <nav class="mobile-nav mobile-nav--light position-fixed fixed-top">
+        <button class="btn btn-link mobile-nav-icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Brand name</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="mm-body">
+              <nav class="mm-body__links">
+                <ul class="mb-links list-unstyled">
+                  <li class="mb-links__item">
+                    <a class="mb-link active" aria-current="page" href="#">Asosiy</a>
+                  </li>
+                  <li class="mb-links__item clps-down">
+                    <a class="mb-link" data-bs-toggle="collapse" href="#mb-collapse" role="button" aria-expanded="false" aria-controls="mb-collapse">
+                      Oliygohlar
+                    </a>
+                    <div class="collapse" id="mb-collapse">
+                      <ul class="mb-links list-unstyled">
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Asosiy</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-maxsus</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">O’rta-ta’lim</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Test</a>
+                        </li>
+                        <li class="mb-links__item">
+                          <a class="mb-link" href="#">Yangiliklar</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-maxsus</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">O’rta-ta’lim</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Test</a>
+                  </li>
+                  <li class="mb-links__item">
+                    <a class="mb-link" href="#">Yangiliklar</a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <h3 class="mobile-nav-brand mb-0"><a class="link-dark" href="index.html">Navbar</a></h3>
+        <button class="btn btn-link mobile-nav-icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavSearch" aria-controls="mobileNavSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="-3 -3 24 24">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+        <div class="d-flex ms-2">
+          <!-- <a href="#!" class="btn d-none d-xxl-inline-block btn-link text-decoration-none">Registratsiya</a> -->
+          <!-- <a href="#!" class="btn btn-primary">Kirish</a> -->
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle profile-btn" type="button" id="profile-menu-btn" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/portrets/profile.jpg" class="ava" alt="">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile-menu-btn">
+              <li><a class="dropdown-item" href="profile.html">Shaxsiy kabinet</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="index.html">Chiqish</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
+      <div class="offcanvas offcanvas-top offcanvas-search" tabindex="-1" id="mobileNavSearch" aria-labelledby="mobileNavSearchLabel">
+        <div class="container">
+          <div class="row">
+            <div class="offcanvas-header">
+              <h5 id="mobileNavSearchLabel">Qidiruv</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex form-control border icon-input flex-fill">
+                <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+                <i class="bi bi-search"></i>
+              </form>
+              <ul class="list-unstyled history-list">
+                <li class="history-list__item">
+                  Diniy oliygohlar
+                </li>
+                <li class="history-list__item">
+                  O'rta ta'lim
+                </li>
+                <li class="history-list__item">
+                  Xususiy oliygohlar
+                </li>
+                <li class="history-list__item">
+                  Qabul 2021
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-flex">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Asosiy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oliygohlar
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="univers.html">Davlat</a></li>
+                  <li><a class="dropdown-item" href="#">Xususiy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Diniy</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="univers.html">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="univers.html">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tests.html">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Yangiliklar</a>
+              </li>
+            </ul>
+            <form class="d-xxl-flex d-none form-control icon-input flex-fill">
+              <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </form>
+            <button class="btn btn-link mobile-nav-icon-btn d-xxl-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavSearch" aria-controls="mobileNavSearch">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="-3 -3 24 24">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+            <div class="d-flex ms-2">
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary-new dropdown-toggle" type="button" id="profile-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/portrets/profile.jpg" style="height: 1.5rem; width: 1.5rem;" class="ava" alt="">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile-drop">
+                  <li><a class="dropdown-item" href="profile.html">Shaxsiy kabinet</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="index.html">Chiqish</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--dark">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h3 class="hero__title">Brand name</h3>
+              <p class="hero__subheader">O’zbekistondagi tashkilotlari va ta’lim to’g’risidagi so’ggi yangiliklar</p>
+              <div class="input-group hero-search mb-3">
+                <button class="btn btn-sm px-4 btn-secondary-new dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="d-none d-md-inline">O’quv markazlari</span><i class="bi bi-list d-md-none"></i> </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Davlat</a></li>
+                  <li><a class="dropdown-item active" href="#">O’quv markazlari</a></li>
+                  <li><a class="dropdown-item" href="#">Maktab</a></li>
+                  <li><a class="dropdown-item" href="#">O'rta ta'lim</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">O'rta maxsus</a></li>
+                </ul>
+                <form class="d-flex form-control icon-input flex-fill px-4 py-3 border-0">
+                  <input class="flex-fill" type="search" placeholder="Search" aria-label="Search">
+                  <i class="bi bi-search"></i>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="row bg-white g-0 main-shadow">
+            <div class="col-md-4">
+              <div class="main-activities">
+                <div class="main-activities__icon mb-4">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M28.0001 22.3666C29.9117 22.3666 31.4669 20.8114 31.4669 18.8997V16.6678C31.4669 14.7561 29.9116 13.2009 28.0001 13.2009C26.0885 13.2009 24.5332 14.7561 24.5332 16.6678V18.8997C24.5332 20.8112 26.0884 22.3666 28.0001 22.3666ZM26.1738 16.6678C26.1738 15.6608 26.993 14.8416 28.0001 14.8416C29.0071 14.8416 29.8263 15.6608 29.8263 16.6678V18.8997C29.8263 19.9067 29.0071 20.7259 28.0001 20.7259C26.993 20.7259 26.1738 19.9067 26.1738 18.8997V16.6678Z"/><path d="M16.0674 32.5809C16.5204 32.5809 16.8877 32.2136 16.8877 31.7605V28.7363C16.8877 28.2833 16.5204 27.916 16.0674 27.916C15.6144 27.916 15.2471 28.2833 15.2471 28.7363V31.7605C15.2471 32.2136 15.6144 32.5809 16.0674 32.5809Z"/><path d="M11.585 32.5809C12.038 32.5809 12.4053 32.2136 12.4053 31.7605V28.7363C12.4053 28.2833 12.038 27.916 11.585 27.916C11.1319 27.916 10.7646 28.2833 10.7646 28.7363V31.7605C10.7646 32.2136 11.1319 32.5809 11.585 32.5809Z"/><path d="M7.10351 27.916C6.65048 27.916 6.2832 28.2833 6.2832 28.7363V31.7605C6.2832 32.2136 6.65048 32.5809 7.10351 32.5809C7.55654 32.5809 7.92382 32.2136 7.92382 31.7605V28.7363C7.92382 28.2833 7.55654 27.916 7.10351 27.916Z"/><path d="M54.608 25.3631C55.3756 25.3631 56 24.7387 56 23.9712V21.3978C56 20.6303 55.3756 20.0059 54.608 20.0059H39.4107C38.9575 20.0059 38.5903 20.3732 38.5903 20.8262C38.5903 21.2792 38.9575 21.6465 39.4107 21.6465H54.3594V23.7225H36.3759V14.6128C36.3759 13.5583 35.8664 12.5587 35.0126 11.9386L28.8203 7.44506V3.2793C28.8203 2.82627 28.4531 2.45898 28 2.45898C27.547 2.45898 27.1797 2.82627 27.1797 3.2793V7.44506L20.9872 11.9388C20.1336 12.5587 19.6241 13.5584 19.6241 14.6128V20.0059H1.39191C0.624422 20.0059 0 20.6303 0 21.3978V23.9712C0 24.7387 0.624422 25.3631 1.39191 25.3631H1.90641V35.8795C0.800844 36.2425 0 37.2838 0 38.5092V43.5936C0 44.819 0.800844 45.8603 1.90641 46.2233V48.296H1.39234C0.624531 48.296 0 48.9205 0 49.6883V52.1493C0 52.9164 0.624531 53.5405 1.39234 53.5405H8.37659C8.82963 53.5405 9.19691 53.1732 9.19691 52.7202C9.19691 52.2672 8.82963 51.8999 8.37659 51.8999H1.64062V49.9366H11.4069V52.7205C11.4069 53.1735 11.7742 53.5408 12.2273 53.5408C12.2294 53.5408 12.2314 53.5405 12.2336 53.5405H54.6077C55.3755 53.5405 56 52.9164 56 52.1493V49.6883C56 48.9205 55.3754 48.296 54.6077 48.296H54.0937V46.2232C55.1993 45.8602 56.0001 44.8189 56.0001 43.5936V38.5092C56.0001 37.2839 55.1993 36.2425 54.0937 35.8796V25.3631H54.608ZM31.5954 43.9762V51.8999H28.8203V43.9747L31.5954 43.9762ZM27.1797 51.8999H24.405L24.4086 43.9723L27.1797 43.9738V51.8999ZM37.9368 49.9366H42.9524V51.8999H37.9368V49.9366ZM21.951 13.2664L28 8.87689L34.0488 13.2663C34.4787 13.5785 34.7353 14.0819 34.7353 14.613V33.6673H28.6523C28.1992 33.6673 27.832 34.0346 27.832 34.4876C27.832 34.9406 28.1992 35.3079 28.6523 35.3079H36.1709C36.24 35.3079 36.2962 35.3641 36.2962 35.4333V51.8999H33.236V43.9762C33.236 43.0694 32.4983 42.3316 31.5914 42.3316H24.4086C23.5017 42.3316 22.764 43.0694 22.764 43.9762V51.8999H20.4444H19.7038V35.4333C19.7038 35.3641 19.76 35.3079 19.8291 35.3079H24.7942C25.2472 35.3079 25.6145 34.9406 25.6145 34.4876C25.6145 34.0346 25.2472 33.6673 24.7942 33.6673H21.2647V14.6128C21.2647 14.0819 21.5214 13.5785 21.951 13.2664ZM1.64062 21.6465H19.6241V23.7225H1.64062V21.6465ZM1.64062 38.5092C1.64062 37.8878 2.14616 37.3823 2.76752 37.3823C3.38888 37.3823 3.89441 37.8878 3.89441 38.5092V43.5936C3.89441 44.215 3.38888 44.7205 2.76752 44.7205C2.14616 44.7205 1.64062 44.215 1.64062 43.5936V38.5092ZM3.54703 48.296V46.2486C4.69459 45.911 5.53503 44.8489 5.53503 43.5936V38.5092C5.53503 37.2538 4.69459 36.1918 3.54703 35.8542V25.3633H19.6241V33.6802C18.7467 33.7823 18.0632 34.5289 18.0632 35.4333V48.296H13.0476V46.237C14.1743 45.8865 14.9948 44.8341 14.9948 43.5936V38.5092C14.9948 36.9832 13.7533 35.7417 12.2273 35.7417C10.7013 35.7417 9.45973 36.9832 9.45973 38.5092V43.5936C9.45973 44.8341 10.2802 45.8867 11.4069 46.237V48.296H3.54703ZM12.2273 44.7205C11.6059 44.7205 11.1004 44.215 11.1004 43.5936V38.5092C11.1004 37.8878 11.6059 37.3823 12.2273 37.3823C12.8486 37.3823 13.3541 37.8878 13.3541 38.5092V43.5936C13.3541 44.215 12.8486 44.7205 12.2273 44.7205ZM18.0632 49.9366V51.8999H13.0476V49.9366H18.0632ZM54.3594 51.8999H44.5931V49.9366H54.3594V51.8999ZM44.5931 48.296V46.237C45.7198 45.8865 46.5404 44.8341 46.5404 43.5936V38.5092C46.5404 36.9832 45.2988 35.7417 43.7728 35.7417C42.2467 35.7417 41.0052 36.9832 41.0052 38.5092V43.5936C41.0052 44.8341 41.8257 45.8867 42.9524 46.237V48.296H37.9368V35.4333C37.9368 34.5289 37.2532 33.7822 36.3759 33.6802V25.3633H52.453V35.8541C51.3054 36.1917 50.4649 37.2538 50.4649 38.5092V43.5936C50.4649 44.849 51.3053 45.9112 52.453 46.2487V48.2961H44.5931V48.296ZM43.7728 44.7205C43.1514 44.7205 42.6459 44.215 42.6459 43.5936V38.5092C42.6459 37.8878 43.1514 37.3823 43.7728 37.3823C44.3942 37.3823 44.8997 37.8878 44.8997 38.5092V43.5936C44.8997 44.215 44.3942 44.7205 43.7728 44.7205ZM54.3594 43.5936C54.3594 44.215 53.8538 44.7205 53.2324 44.7205C52.611 44.7205 52.1055 44.215 52.1055 43.5936V38.5092C52.1055 37.8878 52.611 37.3823 53.2324 37.3823C53.8538 37.3823 54.3594 37.8878 54.3594 38.5092V43.5936Z"/><path d="M49.4668 27.916C49.0137 27.916 48.6465 28.2833 48.6465 28.7363V31.7605C48.6465 32.2136 49.0137 32.5809 49.4668 32.5809C49.9199 32.5809 50.2871 32.2136 50.2871 31.7605V28.7363C50.2871 28.2833 49.9198 27.916 49.4668 27.916Z"/><path d="M44.9854 27.916C44.5322 27.916 44.165 28.2833 44.165 28.7363V31.7605C44.165 32.2136 44.5322 32.5809 44.9854 32.5809C45.4385 32.5809 45.8057 32.2136 45.8057 31.7605V28.7363C45.8057 28.2833 45.4385 27.916 44.9854 27.916Z"/><path d="M40.5029 27.916C40.0498 27.916 39.6826 28.2833 39.6826 28.7363V31.7605C39.6826 32.2136 40.0498 32.5809 40.5029 32.5809C40.9561 32.5809 41.3232 32.2136 41.3232 31.7605V28.7363C41.3232 28.2833 40.9561 27.916 40.5029 27.916Z"/><path d="M25.667 38.6316C25.667 39.0846 26.0343 39.4519 26.4873 39.4519H29.5134C29.9665 39.4519 30.3337 39.0846 30.3337 38.6316C30.3337 38.1786 29.9665 37.8113 29.5134 37.8113H26.4873C26.0342 37.8113 25.667 38.1785 25.667 38.6316Z"/><path d="M24.0762 26.2688H31.9232C32.3763 26.2688 32.7435 25.9015 32.7435 25.4485C32.7435 24.9955 32.3763 24.6282 31.9232 24.6282H24.0762C23.6231 24.6282 23.2559 24.9955 23.2559 25.4485C23.2559 25.9015 23.6231 26.2688 24.0762 26.2688Z"/><path d="M24.0762 29.5566H31.9232C32.3763 29.5566 32.7435 29.1894 32.7435 28.7363C32.7435 28.2833 32.3763 27.916 31.9232 27.916H24.0762C23.6231 27.916 23.2559 28.2833 23.2559 28.7363C23.2559 29.1894 23.6231 29.5566 24.0762 29.5566Z"/></g></svg>
+                </div>
+                <h4 class="main-activities__title mb-3"><a href="#!" class="cta-link">Ta’lim tashkilotlari</a></h4>
+                <p class="main-activities__desc">Oliygohlar, texnikumlar, maktablar haqida to’liq ma’lumotlar</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-activities">
+                <div class="main-activities__icon mb-4">
+                  <svg height="100%" viewBox="1 -30 511.999 511" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="m457.144531 230.441406h-151.675781c-5.546875 0-10.039062 4.496094-10.039062 10.039063s4.492187 10.039062 10.039062 10.039062h151.675781c5.542969 0 10.039063-4.496093 10.039063-10.039062s-4.492188-10.039063-10.039063-10.039063zm0 0"/><path d="m457.144531 346.550781h-151.675781c-5.546875 0-10.039062 4.496094-10.039062 10.039063 0 5.546875 4.492187 10.039062 10.039062 10.039062h151.675781c5.542969 0 10.039063-4.492187 10.039063-10.039062 0-5.542969-4.492188-10.039063-10.039063-10.039063zm0 0"/><path d="m148.226562 366.628906h116.109376c5.542968 0 10.039062-4.492187 10.039062-10.039062v-116.109375c0-5.542969-4.496094-10.039063-10.039062-10.039063h-116.109376c-5.542968 0-10.039062 4.496094-10.039062 10.039063v116.109375c0 5.546875 4.496094 10.039062 10.039062 10.039062zm10.039063-116.109375h96.03125v96.03125h-96.03125zm0 0"/><path d="m501.960938.5h-421.421876c-5.546874 0-10.039062 4.496094-10.039062 10.039062v57.679688h-60.460938c-5.542968 0-10.039062 4.492188-10.039062 10.039062v327.027344c0 24.972656 20.316406 45.289063 45.289062 45.289063h421.421876c24.972656 0 45.289062-20.316407 45.289062-45.289063v-394.746094c0-5.546874-4.496094-10.039062-10.039062-10.039062zm-431.460938 188.382812h-15.171875v-33.136718h15.167969v33.136718zm-50.421875 216.402344v-316.988281h50.421875v47.371094h-25.210938c-5.542968 0-10.039062 4.496093-10.039062 10.039062v53.214844c0 5.542969 4.496094 10.039063 10.039062 10.039063h25.207032v37.976562h-25.207032c-5.542968 0-10.039062 4.496094-10.039062 10.039062 0 5.542969 4.496094 10.039063 10.039062 10.039063h25.207032v37.976563h-25.207032c-5.542968 0-10.039062 4.496093-10.039062 10.039062 0 5.546875 4.496094 10.042969 10.039062 10.042969h25.207032v37.972656h-25.207032c-5.542968 0-10.039062 4.496094-10.039062 10.042969 0 5.542968 4.496094 10.039062 10.039062 10.039062h25.207032v22.15625c0 13.902344-11.308594 25.210938-25.207032 25.210938-13.902343 0-25.210937-11.308594-25.210937-25.210938zm471.84375 0c0 13.902344-11.308594 25.210938-25.210937 25.210938h-383.816407c4.988281-7.414063 7.679688-16.273438 7.679688-25.210938v-384.707031h401.347656zm0 0"/><path d="m187.039062 129.582031h209.3125c5.546876 0 10.039063-4.496093 10.039063-10.039062v-53.214844c0-5.542969-4.492187-10.039063-10.039063-10.039063h-209.3125c-5.542968 0-10.039062 4.496094-10.039062 10.039063v53.214844c0 5.542969 4.496094 10.039062 10.039062 10.039062zm10.039063-53.214843h189.234375v33.136718h-189.234375zm0 0"/><path d="m148.226562 190.050781h38.8125c5.542969 0 10.039063-4.496093 10.039063-10.039062s-4.496094-10.039063-10.039063-10.039063h-38.8125c-5.542968 0-10.039062 4.496094-10.039062 10.039063s4.496094 10.039062 10.039062 10.039062zm0 0"/><path d="m235.527344 174.441406c-2.34375-3.507812-6.726563-5.191406-10.820313-4.144531-4.007812 1.023437-7.007812 4.460937-7.5 8.570313-.488281 4.113281 1.734375 8.210937 5.421875 10.085937 3.734375 1.898437 8.347656 1.234375 11.417969-1.613281 3.550781-3.296875 4.167969-8.882813 1.480469-12.898438zm0 0"/><path d="m257.097656 180.011719c0 5.542969 4.496094 10.039062 10.039063 10.039062h190.007812c5.542969 0 10.039063-4.496093 10.039063-10.039062s-4.496094-10.039063-10.039063-10.039063h-190.007812c-5.542969 0-10.039063 4.496094-10.039063 10.039063zm0 0"/><path d="m453.3125 307.742188c3.863281 1.601562 8.460938.578124 11.269531-2.523438 2.816407-3.109375 3.386719-7.773438 1.410157-11.472656-1.996094-3.734375-6.261719-5.871094-10.453126-5.179688-4.203124.691406-7.605468 4.058594-8.300781 8.269532-.75 4.539062 1.820313 9.148437 6.074219 10.90625zm0 0"/><path d="m305.46875 308.515625h111.722656c5.542969 0 10.039063-4.496094 10.039063-10.042969 0-5.542968-4.496094-10.039062-10.039063-10.039062h-111.722656c-5.546875 0-10.039062 4.496094-10.039062 10.039062 0 5.546875 4.492187 10.042969 10.039062 10.042969zm0 0"/></svg>
+                </div>
+                <h4 class="main-activities__title mb-3"><a href="#!" class="cta-link">So’nggi yangiliklar</a></h4>
+                <p class="main-activities__desc">Ta’lim to’g’risidagi qonun va qarorlar va o’zgarishlar haqida yangiliklar</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main-activities">
+                <div class="main-activities__icon mb-4">
+                  <svg id="Capa_1" enable-background="new 0 0 512 512" height="100%" viewBox="0 0 512 512" width="100%" xmlns="http://www.w3.org/2000/svg"><g><path d="m30 512h292c16.542 0 30-13.458 30-30v-412c0-16.542-13.458-30-30-30h-57.72c-4.128-11.639-15.243-20-28.28-20h-15.486c-7.055-12.197-20.161-20-34.514-20h-20c-14.352 0-27.458 7.803-34.513 20h-15.487c-13.036 0-24.152 8.361-28.28 20h-57.72c-16.542 0-30 13.458-30 30v412c0 16.542 13.458 30 30 30zm-10-442c0-5.514 4.486-10 10-10h56v10c0 5.522 4.477 10 10 10h160c5.523 0 10-4.478 10-10v-10h56c5.514 0 10 4.486 10 10v412c0 5.514-4.486 10-10 10h-292c-5.514 0-10-4.486-10-10z"/><path d="m482 80h-10v-10c0-16.542-13.458-30-30-30v-30c0-5.522-4.477-10-10-10s-10 4.478-10 10v30c-16.542 0-30 13.458-30 30v278.918c0 47.079 10.92 96.262 30 135.396v17.686c0 5.522 4.477 10 10 10s10-4.478 10-10v-17.686c19.08-39.134 30-88.317 30-135.396v-248.918h10c5.514 0 10 4.486 10 10v146c0 5.522 4.477 10 10 10s10-4.478 10-10v-146c0-16.542-13.458-30-30-30zm-30 268.918c0 36.421-7.318 75.406-20 108.269-12.682-32.862-20-71.848-20-108.269v-2.918h40zm0-22.918h-40v-226h40zm0-246h-40v-10c0-5.514 4.486-10 10-10h20c5.514 0 10 4.486 10 10z"/><path d="m76 206h60c5.523 0 10-4.478 10-10v-60c0-5.522-4.477-10-10-10h-60c-5.523 0-10 4.478-10 10v60c0 5.522 4.477 10 10 10zm10-60h40v40h-40z"/><path d="m76 326h60c5.523 0 10-4.478 10-10v-60c0-5.522-4.477-10-10-10h-60c-5.523 0-10 4.478-10 10v60c0 5.522 4.477 10 10 10zm10-60h40v40h-40z"/><path d="m76 446h60c5.523 0 10-4.478 10-10v-60c0-5.522-4.477-10-10-10h-60c-5.523 0-10 4.478-10 10v60c0 5.522 4.477 10 10 10zm10-60h40v40h-40z"/><path d="m176 206h100c5.523 0 10-4.478 10-10s-4.477-10-10-10h-100c-5.523 0-10 4.478-10 10s4.477 10 10 10z"/><path d="m176 326h100c5.523 0 10-4.478 10-10s-4.477-10-10-10h-100c-5.523 0-10 4.478-10 10s4.477 10 10 10z"/><path d="m176 446h100c5.523 0 10-4.478 10-10s-4.477-10-10-10h-100c-5.523 0-10 4.478-10 10s4.477 10 10 10z"/><path d="m176 406h60c5.523 0 10-4.478 10-10s-4.477-10-10-10h-60c-5.523 0-10 4.478-10 10s4.477 10 10 10z"/><path d="m176 286h60c5.523 0 10-4.478 10-10s-4.477-10-10-10h-60c-5.523 0-10 4.478-10 10s4.477 10 10 10z"/><path d="m176 166h60c5.523 0 10-4.478 10-10s-4.477-10-10-10h-60c-5.523 0-10 4.478-10 10s4.477 10 10 10z"/></g></svg>
+                </div>
+                <h4 class="main-activities__title mb-3"><a href="#!" class="cta-link"> Onlayn imtihon</a></h4>
+                <p class="main-activities__desc">Barcha fanlar bo’yicha saralangan va mavzulashtirilgan testlar</p>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </section>
+      <section class="main-univers">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mx-auto section-title">
+              <h4>Ta’lim muassasalsri</h4>
+              <p>Davlat va nodavlat ta’lim muassasalari, o’quv markazlari haqida batafsil ma’lumotlar</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-4">
+              <div class="edu-inst bg-white main-shadow">
+                <img src="images/universities/tuit_logo.png" class="edu-inst__img" alt="tuit">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti</a></h6>
+                  <div class="short-info mt-auto">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Farg’ona</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Qabul kvotasi">4200</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Yo'lanishlar soni">34</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="O'rtacha kirish bali">178.2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="edu-inst bg-white main-shadow">
+                <img src="images/universities/TSUL.png" class="edu-inst__img" alt="yuridik">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universiteti</a></h6>
+                  <div class="short-info mt-auto">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Farg’ona</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Qabul kvotasi">4200</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Yo'lanishlar soni">34</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="O'rtacha kirish bali">178.2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="edu-inst bg-white main-shadow">
+                <img src="images/universities/pedagok.jpg" class="edu-inst__img" alt="pedagogik institut">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Ташкентский государственный юридический университет</a></h6>
+                  <div class="short-info mt-auto">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Farg’ona</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Qabul kvotasi">5200</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Yo'lanishlar soni">18</div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="O'rtacha kirish bali">220.2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+              <a href="#!" class="btn btn-primary">Barchasini ko’rish</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="news-section main-card">
+                <div class="row">
+                  <div class="col-lg-4 mx-auto section-title">
+                    <h4>Yangiliklar</h4>
+                    <p>Davlat va nodavlat ta’lim muassasalari, o’quv markazlari haqida so'nggi yangiliklar</p>
+                  </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                  <div class="col news-card">
+                    <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
+                    <div class="news-card__body">
+                      <div class="d-flex mb-2">
+                        <a href="#!" class="badge bg-danger tag">abitruent</a>
+                      </div>
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark stretched-link" >
+                          Приём-2021: Какие новшества ожидают абитуриентов?
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled">
+                        <li class="news-info__item"><span>12</span>ta ko'rilgan</li>
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col news-card">
+                    <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
+                    <div class="news-card__body">
+                      <div class="d-flex mb-2">
+                        <a href="#!" class="badge bg-info tag">abitruent</a>
+                      </div>
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark">
+                          Приём-2021: Какие новшества ожидают абитуриентов?
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled">
+                        <li class="news-info__item"><span>12</span>ta ko'rilgan</li>
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col news-card">
+                    <img src="images/post/post-1.jpg" alt="post-1" class="news-card__img img-fluid">
+                    <div class="news-card__body">
+                      <div class="d-flex mb-2">
+                        <a href="#!" class="badge bg-success tag">abitruent</a>
+                      </div>
+                      <h6 class="news-card__title">
+                        <a href="#!" class="link-dark">
+                          Приём-2021: Какие новшества ожидают абитуриентов?
+                        </a>
+                      </h6>
+                      <ul class="news-info list-unstyled">
+                        <li class="news-info__item"><span>12</span>ta ko'rilgan</li>
+                        <li class="news-info__item"><time>20-апреля, 00:39</time></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mx-auto text-center">
+                    <a href="#!" class="btn btn-primary">Barchasini ko’rish</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="main-univers">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mx-auto section-title">
+              <h4>Ta’lim muassasalsri</h4>
+              <p>Davlat va nodavlat ta’lim muassasalari, o’quv markazlari haqida batafsil ma’lumotlar</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-4">              
+              <div class="edu-inst bg-white main-shadow">
+                <img src="images/lcs/lets-animate.jpg" class="edu-inst__img" alt="lets-animate">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Let’s Animate</a></h6>
+                  <div class="short-info mt-auto">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Tashkent</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="yo'nalish">Komputer Grafikasi</div>
+                  </div>
+                  <ul class="list-group list-group-flush spc-list">
+                    <li class="list-group-item">Дизайн Интерьера</li>
+                    <li class="list-group-item">Визуальные эффекты и анимация</li>
+                    <li class="list-group-item">3D Motion Design</li>
+                    <li class="list-group-item pb-0 d-grid">
+                      <a href="#!" class="btn btn-light border btn-sm">Batafsil</a>
+                    </li>
+                  </ul>
+                </div>                
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="edu-inst bg-white main-shadow">
+                <img src="images/lcs/cambridge.jpg" class="edu-inst__img" alt="cambridge">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Cambridge Learning Center</a></h6>
+                  <div class="short-info mt-auto">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Tashkent</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="yo'nalish">Ingliz tili</div>
+                  </div>
+                  <ul class="list-group list-group-flush spc-list">
+                    <li class="list-group-item">General English</li>
+                    <li class="list-group-item">IELTS Full Course</li>
+                    <li class="list-group-item">IELTS Rocket</li>
+                    <li class="list-group-item pb-0 d-grid">
+                      <a href="#!" class="btn btn-light border btn-sm">Batafsil</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="edu-inst bg-white main-shadow">
+                <img src="images/lcs/sensus.png" class="edu-inst__img" alt="sensus">
+                <div class="edu-inst__body">
+                  <h6 class="mb-3 edu-inst__title"><a href="#!" class="cta-link">Sensus Learning Center</a></h6>
+                  <div class="short-info mt-auto">
+                    <div class="short-info__item"><a href="#!" class="text-primary">Tashkent</a></div>
+                    <div class="short-info__item text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="yo'nalish">Fan va kasbiy kurslar</div>
+                  </div>
+                  <ul class="list-group list-group-flush spc-list">
+                    <li class="list-group-item">Языковые курсы</li>
+                    <li class="list-group-item">Подготовительные курсы</li>
+                    <li class="list-group-item">Профессиональные курсы</li>
+                    <li class="list-group-item pb-0 d-grid">
+                      <a href="#!" class="btn btn-light border btn-sm">Batafsil</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+              <a href="#!" class="btn btn-primary">Barchasini ko’rish</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-subjects main-card">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mx-auto section-title">
+              <h4>Mavzuli testlar</h4>
+              <p>Fanlar bo’yicha mavzulashtirilgan test sinovlari</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-5">
+              <div class="card text-white border-0 rounded-0">
+                <img src="images/background/subjects/maths.png" class="card-img subj-img rounded-0" alt="...">
+                <div class="card-img-overlay">
+                  <div class="d-flex flex-column p-3 first-s-card h-100">
+                    <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Matematika</a></h5>
+                    <p class="card-text">15 ga yaqin mavzular bo’yicha teslar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 subjects mt-3 mt-lg-0">
+              <div class="card subject-card">
+                <img src="images/background/subjects/history.png" class="card-img rounded-0" alt="...">
+                <div class="card-img-overlay">
+                  <div class="d-flex flex-column p-2 h-100">
+                    <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Tarix</a></h5>
+                    <p class="card-text">16ga yaqin mavzulashtirilgan testlar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card subject-card">
+                <img src="images/background/subjects/biology.png" class="card-img rounded-0" alt="...">
+                <div class="card-img-overlay">
+                  <div class="d-flex flex-column p-2 h-100">
+                    <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Biologiya</a></h5>
+                    <p class="card-text">16ga yaqin mavzulashtirilgan testlar</p>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="col-lg-3 subjects mt-3 mt-lg-0">
+              <div class="card subject-card">
+                <img src="images/background/subjects/chemistry.png" class="card-img rounded-0" alt="...">
+                <div class="card-img-overlay">
+                  <div class="d-flex flex-column p-2 h-100">
+                    <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Kimyo</a></h5>
+                    <p class="card-text">16ga yaqin testlar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-dark subject-card">
+                <img src="images/background/subjects/geography.png" class="card-img rounded-0" alt="...">
+                <div class="card-img-overlay">
+                  <div class="d-flex flex-column p-2 h-100">
+                    <h5 class="card-title mt-auto"> <a href="#!" class="stretched-link">Geografiya</a></h5>
+                    <p class="card-text">16ga yaqin testlar</p>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+              <a href="#!" class="btn btn-primary">Barchasini ko’rish</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tg-subsc">
+        <div class="container">
+          <div class="tg-subs-block tg-subs-block--dark">
+            <div class="row justify-content-around">
+              <div class="col-md-7 col-lg-5 text-center text-md-start order-1 order-md-0">
+                <h4 class="mb-3">Bizning telegram kanalimizga obuna bo’ling</h4>
+                <a href="#!" class="btn btn-primary">Obuna bo’lish</a>
+              </div>
+              <div class="col-md-3 col-lg-2 col-6 mb-3 mb-md-0 order-0 order-md-1">
+                <img src="images/icons/plane.svg" alt="plane" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark footer-dark mt-4">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+            <h4><a href="#!" class="link-light text-decoration-none">Brand name</a></h4>
+            <ul class="nav nav-dark justify-content-center justify-content-md-start">
+              <li class="nav-item">
+                <a class="nav-link ps-md-0" href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-3 mt-md-0">
+            <ul class="nav flex-column nav-dark">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Oliygohlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-maxsus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O’rta-ta’lim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Yangiliklar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          <p class="mb-0 text-light text-center text-md-start">Ⓒ Action Media Solution, 2021 </p>
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#!" class="link-light text-decoration-none me-5">Privacy and Policy</a>
+            <div class="dropdown text-center">
+              <button class="btn btn-sm btn-link text-light dropdown-toggle text-decoration-none" type="button" id="lang" data-bs-toggle="dropdown" aria-expanded="false">
+                uz
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="lang">
+                <li><a class="dropdown-item" href="#">uz</a></li>
+                <li><a class="dropdown-item" href="#">ru</a></li>
+                <li><a class="dropdown-item" href="#">en</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/custom.js"></script>
+  </body>

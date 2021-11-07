@@ -1,0 +1,29 @@
+.login-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 100vh;
+}
+
+.btn-social{
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+
+
+  &.btn-telegram{
+    background-color: rgba($color: #40B3E0, $alpha: 0.1);
+  }
+
+  &.btn-facebook{
+    background-color: rgba($color: #395185, $alpha: 0.1);
+  }
+
+  &.btn-google{
+    border: 2px solid rgba($color: #000000, $alpha: 0.1);
+  }
+}
+
+.input-group-text.active .uil-eye::before{
+  content: '\ebf8';
+}
